@@ -1,0 +1,26 @@
+<tr data-jsonstring="{{json this}}" class="{{#if banned}}disabled{{/if}}" data-id='{{id}}' data-role="view-user">
+	<td class='image-cell'>
+		{{> userimage this}}
+	</td>
+	<td>{{name}}</td>
+	<td><span title="{{formatDateTime created_at}}" data-toggle="tooltip">{{formatDateTime created_at "short"}}</span></td>
+	<td class='actions'>
+		<div class="btn-group exclude-row-click">
+			<button class="btn btn-link copy-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Copy User ID" data-copy="{{id}}" data-allow-copy="true" data-toggle="tooltip">
+				<i class="fa fa-clone fa-lg" aria-hidden="true"></i>
+			</button>
+			<div class="dropdown">
+			  <button class="btn btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  	<a class="dropdown-item" data-id="{{id}}" href="#!" data-role="show-chats">View Chats</a>
+			  	<a class="dropdown-item" data-id="{{id}}" href="#!" data-role="show-reports">View Reports</a>
+			  	<a class="dropdown-item" data-id="{{id}}" href="#!" data-role="create-chat">Create Chat</a>
+			    <a class="dropdown-item" data-id="{{id}}" href="#!" data-role="{{#if banned}}enable{{else}}disable{{/if}}-user"></a>
+			    <a class="dropdown-item delete-user" data-id="{{id}}" href="#!" data-role='delete-user'>Delete User</a>
+			  </div>
+			</div>
+		</div>
+	</td>
+</tr>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TMY-JK-wFk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JBG-yA-SF8" customClass="ShapeImageView" customModule="Sparker" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="029-fR-EZ2"/>
+                        <constraint firstAttribute="width" constant="50" id="dXt-ww-VNr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORN-UB-PTL" customClass="ShapeView" customModule="Sparker" customModuleProvider="target">
+                    <rect key="frame" x="66" y="8" width="174" height="174"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-UB-DVF" customClass="ShapeImageView" customModule="Sparker" customModuleProvider="target">
+                            <rect key="frame" x="12" y="12" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4bc-UB-DVF" secondAttribute="height" multiplier="1:1" id="TXe-z3-zNY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="4bc-UB-DVF" firstAttribute="leading" secondItem="ORN-UB-PTL" secondAttribute="leading" constant="12" id="JgO-tj-uCI"/>
+                        <constraint firstAttribute="bottom" secondItem="4bc-UB-DVF" secondAttribute="bottom" constant="12" id="kOA-98-nj2"/>
+                        <constraint firstItem="4bc-UB-DVF" firstAttribute="top" secondItem="ORN-UB-PTL" secondAttribute="top" constant="12" id="kb0-mg-t8d"/>
+                        <constraint firstAttribute="trailing" secondItem="4bc-UB-DVF" secondAttribute="trailing" constant="12" id="v9Z-7a-iZl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="17:40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED3-fl-G1k">
+                    <rect key="frame" x="213" y="186.5" width="27" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4bc-UB-DVF" firstAttribute="width" secondItem="TMY-JK-wFk" secondAttribute="width" multiplier="2/5" id="9GS-md-lEi"/>
+                <constraint firstItem="JBG-yA-SF8" firstAttribute="top" secondItem="TMY-JK-wFk" secondAttribute="topMargin" id="Eu0-ab-O5K"/>
+                <constraint firstItem="ED3-fl-G1k" firstAttribute="trailing" secondItem="ORN-UB-PTL" secondAttribute="trailing" id="KYs-KH-rdy"/>
+                <constraint firstItem="JBG-yA-SF8" firstAttribute="leading" secondItem="TMY-JK-wFk" secondAttribute="leadingMargin" id="WoK-Y2-cuG"/>
+                <constraint firstItem="ORN-UB-PTL" firstAttribute="top" secondItem="TMY-JK-wFk" secondAttribute="topMargin" id="af7-b3-c6D"/>
+                <constraint firstItem="ED3-fl-G1k" firstAttribute="top" secondItem="ORN-UB-PTL" secondAttribute="bottom" constant="4" id="dt3-jj-5ll"/>
+                <constraint firstItem="ORN-UB-PTL" firstAttribute="leading" secondItem="JBG-yA-SF8" secondAttribute="trailing" constant="8" id="sIO-Oi-bBi"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ORN-UB-PTL" secondAttribute="trailing" priority="750" constant="36" id="w9L-le-I0Z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="44.5" y="-408"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="360" height="360"/>
+    </resources>
+</document>

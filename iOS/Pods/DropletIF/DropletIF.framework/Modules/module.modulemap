@@ -1,0 +1,11 @@
+framework module DropletIF {
+  umbrella header "DropletIF-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DropletIF.Swift {
+    header "DropletIF-Swift.h"
+    requires objc
+}

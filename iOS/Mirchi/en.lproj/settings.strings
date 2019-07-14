@@ -1,0 +1,105 @@
+
+/* Class = "UIBarButtonItem"; title = "ADD_NEW_LOCATION_CLOSE_BUTTON"; ObjectID = "0B0-1l-Kab"; */
+"0B0-1l-Kab.title" = "Close";
+
+/* Class = "UILabel"; text = "SETTINGS_PRIVACY_POLICY_BUTTON"; ObjectID = "6Aq-br-vau"; */
+"6Aq-br-vau.text" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "PASSPORT_CURRENT_LOCATION_HEADING"; ObjectID = "84O-Iv-gJN"; */
+"84O-Iv-gJN.text" = "My Current Location";
+
+/* Class = "UITableViewSection"; headerTitle = "SETTINGS_NOTIFICATIONS_SECTION_HEADING"; ObjectID = "8iJ-h9-lSH"; */
+"8iJ-h9-lSH.headerTitle" = "Notifications";
+
+/* Class = "UILabel"; text = "INTERESTED_IN_MEN_OPTION"; ObjectID = "9KL-Hu-8V3"; */
+"9KL-Hu-8V3.text" = "Men";
+
+/* Class = "UILabel"; text = "PASSPORT_ADD_NEW_LOCATION_BUTTON"; ObjectID = "9pI-i5-lTW"; */
+"9pI-i5-lTW.text" = "Add New Location";
+
+/* Class = "UILabel"; text = "INTERESTED_IN_WOMEN_OPTION"; ObjectID = "Ams-za-0B1"; */
+"Ams-za-0B1.text" = "Women";
+
+/* Class = "UILabel"; text = "SETTINGS_SHOW_PROFILE_TOGGLE"; ObjectID = "C3X-VE-Ekg"; */
+"C3X-VE-Ekg.text" = "Show me on Mirchi";
+
+/* Class = "UITableViewSection"; headerTitle = "SETTINGS_LEGAL_SUPPORT_SECTION_HEADING"; ObjectID = "KHd-Mp-W5C"; */
+"KHd-Mp-W5C.headerTitle" = "Legal";
+
+/* Class = "UIButton"; normalTitle = "DELETE_ACCOUNT_DELETE_BUTTON"; ObjectID = "KVs-5b-0zh"; */
+"KVs-5b-0zh.normalTitle" = "Delete Account";
+
+/* Class = "UITableViewSection"; headerTitle = "SETTINGS_DISCOVERY_SETTINGS_SECTION_HEADING"; ObjectID = "OBo-H8-wgM"; */
+"OBo-H8-wgM.headerTitle" = "Search Criteria";
+
+/* Class = "UILabel"; text = "SETTINGS_GENDERS_INTERESTED_IN_HEADING"; ObjectID = "OcL-I6-SRk"; */
+"OcL-I6-SRk.text" = "Show Me";
+
+/* Class = "UILabel"; text = "SETTINGS_TERMS_BUTTON"; ObjectID = "QAF-mi-s8z"; */
+"QAF-mi-s8z.text" = "Terms of Service";
+
+/* Class = "UITableViewSection"; footerTitle = "SETTINGS_SHOW_PROFILE_TOGGLE_DISCLAIMER"; ObjectID = "SYl-ms-5m1"; */
+"SYl-ms-5m1.footerTitle" = "Your profile will be hidden from everyone except your existing matches.";
+
+/* Class = "UITableViewController"; title = "Location"; ObjectID = "U1G-jB-uas"; */
+"U1G-jB-uas.title" = "Location";
+
+/* Class = "UILabel"; text = "SETTINGS_LOG_OUT_BUTTON"; ObjectID = "XXt-eL-evb"; */
+"XXt-eL-evb.text" = "Log Out";
+
+/* Class = "UILabel"; text = "SETTINGS_AGE_RANGE_HEADING"; ObjectID = "YyQ-DN-RWH"; */
+"YyQ-DN-RWH.text" = "Age Range";
+
+/* Class = "UILabel"; text = "SETTINGS_MATCHES_NOTIFICATIONS_SWITCH"; ObjectID = "e4a-Px-VvD"; */
+"e4a-Px-VvD.text" = "New Matches";
+
+/* Class = "UIButton"; normalTitle = "DELETE_ACCOUNT_HIDE_BUTTON"; ObjectID = "gqJ-Fg-SQp"; */
+"gqJ-Fg-SQp.normalTitle" = "Hide Account";
+
+/* Class = "UILabel"; text = "SETTINGS_DELETE_ACCOUNT_BUTTON"; ObjectID = "jfO-rb-XG6"; */
+"jfO-rb-XG6.text" = "Delete Account";
+
+/* Class = "UILabel"; text = "SETTINGS_MESSAGES_NOTIFICATIONS_SWITCH"; ObjectID = "lIC-Y9-h3x"; */
+"lIC-Y9-h3x.text" = "New Messages";
+
+/* Class = "UILabel"; text = "SETTINGS_UPGRADE_BUTTON_HEADING"; ObjectID = "mrK-5G-0F9"; */
+"mrK-5G-0F9.text" = "Get Mirchi Diamond";
+
+/* Class = "UINavigationItem"; title = "SETTINGS_TITLE"; ObjectID = "mwT-y3-G9u"; */
+"mwT-y3-G9u.title" = "Settings";
+
+/* Class = "UITableViewController"; title = "INTERESTED_IN_TITLE"; ObjectID = "nFq-f5-ht3"; */
+"nFq-f5-ht3.title" = "Show Me";
+
+/* Class = "UILabel"; text = "INTERESTED_IN_MEN_AND_WOMEN_OPTION"; ObjectID = "nQM-Jc-mmG"; */
+"nQM-Jc-mmG.text" = "Men and Women";
+
+/* Class = "UILabel"; text = "SETTINGS_IN_APP_SOUNDS_SWITCH"; ObjectID = "p6x-ff-MEn"; */
+"p6x-ff-MEn.text" = "In App Sounds";
+
+/* Class = "UINavigationItem"; title = "ADD_NEW_LOCATION_TITLE"; ObjectID = "pJp-r1-rRJ"; */
+"pJp-r1-rRJ.title" = "Add New Location";
+
+/* Class = "UILabel"; text = "SETTINGS_SUBSCRIPTION_INFO_BUTTON"; ObjectID = "uMr-Uv-93k"; */
+"uMr-Uv-93k.text" = "Subscription Information";
+
+/* Class = "UILabel"; text = "SETTINGS_LOCATION_HEADING"; ObjectID = "ux6-wG-gZQ"; */
+"ux6-wG-gZQ.text" = "Location";
+
+/* Class = "UILabel"; text = "SETTINGS_UPGRADE_BUTTON_SUB_HEADING"; ObjectID = "ve4-sy-MTN"; */
+"ve4-sy-MTN.text" = "Get Unlimited Likes & More";
+
+/* Class = "UILabel"; text = "DELETE_ACCOUNT_SUB_HEADING"; ObjectID = "wR6-65-9IZ"; */
+"wR6-65-9IZ.text" = "Deleting your account will delete all your matches and messages forever.\n\nIf you just want a break, why not hide your profile instead.";
+
+/* Class = "UILabel"; text = "SETTINGS_MAX_DISTANCE_HEADING"; ObjectID = "xDi-cD-yOA"; */
+"xDi-cD-yOA.text" = "Maximum Distance";
+
+/* Class = "UIViewController"; title = "DELETE_ACCOUNT_TITLE"; ObjectID = "xHU-1O-WFf"; */
+"xHU-1O-WFf.title" = "Delete Account";
+
+/* Class = "UILabel"; text = "SETTINGS_RESTORE_PURCHASES_BUTTON"; ObjectID = "xUx-rY-3zO"; */
+"xUx-rY-3zO.text" = "Restore Purchases";
+
+/* Class = "UILabel"; text = "DELETE_ACCOUNT_HEADING"; ObjectID = "yDF-CV-Esu"; */
+"yDF-CV-Esu.text" = "Delete Account";

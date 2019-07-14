@@ -1,0 +1,23 @@
+service firebase.storage {
+
+  match /b/{bucket}/o {
+  
+  	match /{allImages=**} {
+        allow read: if request.auth.token.admin == true
+        allow write: if request.auth.token.admin == true
+    }
+  
+    match /user_profile_images/{userId}/{imageId} {
+    	allow write: if request.auth.uid == userId;
+      allow read: if request.auth != null;
+    }
+    
+    match /chat_uploads/{chat_id}/{imageId} {
+    	allow write: if request.resource.metadata[request.auth.uid] == request.auth.uid
+      allow read: if resource.metadata[request.auth.uid] == request.auth.uid
+    }
+    
+  }
+}
+
+

@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'Mirchi' do
+  use_frameworks!
+
+  pod 'DropletIF', :git => 'https://bitbucket.org/harrisonsj/dropletif-pod.git', :branch => 'swift5.0'
+  pod 'FirebaseUI/Storage'
+  pod 'Koloda', :git => 'https://github.com/harrisonsj/Koloda.git'
+  pod 'Firebase/AdMob'
+  pod 'Firebase/DynamicLinks'
+  pod 'MBProgressHUD'
+  pod 'MARKRangeSlider'
+  pod 'NMRangeSlider', :git => 'https://github.com/muZZkat/NMRangeSlider.git'
+  pod 'SwipeCellKit'#, :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'swift_4.2'
+  pod 'TOCropViewController'
+  pod 'JDStatusBarNotification'
+  pod 'TTTAttributedLabel'
+  pod 'Firebase/Performance'
+  pod 'Fabric'
+  pod 'Crashlytics'
+
+end

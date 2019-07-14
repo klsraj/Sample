@@ -1,0 +1,55 @@
+{
+  "name": "DropletIF",
+  "version": "1.0.23",
+  "summary": "DropletIF Framework",
+  "homepage": "https://thedropletapp.com",
+  "license": {
+    "type": "Droplet License",
+    "text": "DropletIF is licensed under the Droplet License"
+  },
+  "authors": {
+    "The Droplet App": "contact@thedropletapp.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "5.0",
+  "ios": {
+    "vendored_frameworks": "DropletIF.framework"
+  },
+  "source": {
+    "http": "https://thedropletapp.com/pods/swift5.0/DropletIF.framework.zip"
+  },
+  "dependencies": {
+    "Firebase/Core": [
+      "~> 5.19.0"
+    ],
+    "Firebase/Messaging": [
+      "~> 5.19.0"
+    ],
+    "Firebase/Auth": [
+      "~> 5.19.0"
+    ],
+    "Firebase/Database": [
+      "~> 5.19.0"
+    ],
+    "Firebase/Storage": [
+      "~> 5.19.0"
+    ],
+    "FBSDKCoreKit": [
+      "~> 4.40.0"
+    ],
+    "FBSDKLoginKit": [
+      "~> 4.40.0"
+    ],
+    "GeoFire": [
+      "~> 3.0.0"
+    ],
+    "GoogleMaps": [
+      "~> 3.0.2"
+    ],
+    "GooglePlaces": [
+      "~> 3.0.2"
+    ]
+  }
+}

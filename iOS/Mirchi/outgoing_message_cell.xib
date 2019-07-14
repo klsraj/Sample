@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kB7-je-Khg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0L-l5-9wL" customClass="ShapeView" customModule="Sparker" customModuleProvider="target">
+                    <rect key="frame" x="36" y="8" width="331" height="57.5"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Lorem ipsum this is a test to see just how well this auto-layout works on this message cell!" translatesAutoresizingMaskIntoConstraints="NO" id="KZX-MK-2MM">
+                            <rect key="frame" x="12" y="4" width="307" height="49.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KZX-MK-2MM" secondAttribute="trailing" constant="12" id="VGj-QQ-nHC"/>
+                        <constraint firstItem="KZX-MK-2MM" firstAttribute="leading" secondItem="P0L-l5-9wL" secondAttribute="leading" constant="12" id="kQv-CX-K09"/>
+                        <constraint firstAttribute="bottom" secondItem="KZX-MK-2MM" secondAttribute="bottom" constant="4" id="rCB-Eq-IKx"/>
+                        <constraint firstItem="KZX-MK-2MM" firstAttribute="top" secondItem="P0L-l5-9wL" secondAttribute="top" constant="4" id="rbY-Ov-waC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="17:40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTH-6C-e4A">
+                    <rect key="frame" x="340" y="70" width="27" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lTH-6C-e4A" firstAttribute="top" secondItem="P0L-l5-9wL" secondAttribute="bottom" constant="4" id="Kem-WJ-yrv"/>
+                <constraint firstItem="P0L-l5-9wL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kB7-je-Khg" secondAttribute="leading" constant="36" id="R91-MZ-dms"/>
+                <constraint firstItem="lTH-6C-e4A" firstAttribute="trailing" secondItem="P0L-l5-9wL" secondAttribute="trailing" id="Ref-j3-v7v"/>
+                <constraint firstItem="P0L-l5-9wL" firstAttribute="top" secondItem="kB7-je-Khg" secondAttribute="topMargin" id="XYv-1D-Kym"/>
+                <constraint firstAttribute="trailing" secondItem="P0L-l5-9wL" secondAttribute="trailing" constant="8" id="lT9-1t-9PB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="17.5" y="-383"/>
+        </view>
+    </objects>
+</document>

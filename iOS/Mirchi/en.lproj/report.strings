@@ -1,0 +1,33 @@
+
+/* Class = "UITextField"; placeholder = "REPORT_DETAILS_TEXT_FIELD_PLACEHOLDER"; ObjectID = "5jr-dx-ilQ"; */
+"5jr-dx-ilQ.placeholder" = "Additional details";
+
+/* Class = "UIButton"; normalTitle = "REPORT_ALERT_OFFENSIVE_MESSAGES_OPTION"; ObjectID = "8sR-VR-Bkf"; */
+"8sR-VR-Bkf.normalTitle" = "Offensive Messages";
+
+/* Class = "UILabel"; text = "REPORT_DETAILS_INPUT_HEADING"; ObjectID = "Alc-e3-2iP"; */
+"Alc-e3-2iP.text" = "Please provide detail:";
+
+/* Class = "UIButton"; normalTitle = "REPORT_DETAILS_REPORT_BUTTON"; ObjectID = "MPJ-J3-V4i"; */
+"MPJ-J3-V4i.normalTitle" = "Report";
+
+/* Class = "UILabel"; text = "REPORT_ALERT_SUB_HEADING"; ObjectID = "YSl-c1-8BL"; */
+"YSl-c1-8BL.text" = "They won't know you've reported them";
+
+/* Class = "UIButton"; normalTitle = "REPORT_DETAILS_CANCEL_BUTTON"; ObjectID = "bJV-rb-SAv"; */
+"bJV-rb-SAv.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "REPORT_ALERT_SPAM_OPTION"; ObjectID = "dBy-l8-dMp"; */
+"dBy-l8-dMp.normalTitle" = "Spam";
+
+/* Class = "UIButton"; normalTitle = "REPORT_ALERT_CANCEL_BUTTON"; ObjectID = "fxz-Aj-fYo"; */
+"fxz-Aj-fYo.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "REPORT_DETAILS_ALERT_SUB_HEADING"; ObjectID = "hvj-zD-Tic"; */
+"hvj-zD-Tic.text" = "They won't know you've reported them";
+
+/* Class = "UIButton"; normalTitle = "REPORT_ALERT_OFFENSIVE_PROFILE_OPTION"; ObjectID = "lXD-6l-8P8"; */
+"lXD-6l-8P8.normalTitle" = "Offensive Profile";
+
+/* Class = "UIButton"; normalTitle = "REPORT_ALERT_OTHER_OPTION"; ObjectID = "uCZ-F2-wM5"; */
+"uCZ-F2-wM5.normalTitle" = "Something Else";

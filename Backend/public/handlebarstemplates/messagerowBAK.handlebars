@@ -1,0 +1,26 @@
+<tr class='message-row{{#unless incoming}}-right{{/unless}}'>
+	<td class='thumbnail-cell'>
+		{{#if incoming}}
+			<!--<img class='circular-thumbnail' data-id='{{sender_id}}' data-ref='{{sender.images.[0]}}' data-role='image-to-load'>-->
+			{{> userimage sender}}
+		{{/if}}
+	</td>
+	{{#ifEq type "text"}}
+		<td class='message-cell' title="{{text}}">
+			<span class='message-date'>{{formatDateTime timestamp}}</span>
+			<div class='message-bubble'>{{text}}</div>
+		</td>
+	{{/ifEq}}
+	{{#ifEq type "location"}}
+		<td><a href="https://www.google.com/maps/search/?api=1&query={{lat}},{{lon}}" target="_BLANK" class="btn btn-success" >Location</a></td>
+	{{/ifEq}}
+	{{#ifEq type "image"}}
+		<td><button type="button" class="btn btn-success attachment-btn" data-ref="{{attachment_ref}}">Attachment</button></td>
+	{{/ifEq}}
+	<td class='thumbnail-cell'>
+		{{#unless incoming}}
+			<!--<img class='circular-thumbnail' data-id='{{sender_id}}' data-ref='{{sender.images.[0]}}' data-role='image-to-load'>-->
+			{{> userimage sender}}
+		{{/unless}}
+	</td>
+</tr>

@@ -1,0 +1,10 @@
+<tr>
+	<td class='image-cell' data-jsonstring='{{json from}}' data-id='{{from.id}}' {{#if from.id}}data-role='view-user'{{/if}}>
+		<!--<img class='circular-thumbnail' data-id='{{from.id}}' data-ref='{{from.images.[0]}}' data-role='image-to-load' title='{{from.name}}<br/>{{from.id}}' data-html="true" data-toggle="tooltip">-->
+		{{> userimage from}}
+	</td>
+	<td>{{reason}}</td>
+	<td>{{notes}}</td>
+	<td title='{{chat}}'>{{#if chat}}<button type="button" class="btn btn-info btn-sm chat-btn" data-id="{{chat}}" data-role='view-chat'>{{truncate chat 7}}</button>{{else}}-{{/if}}</td> 
+	<td><span title='{{formatDateTime timestamp}}' data-toggle="tooltip">{{formatDateTime timestamp "short"}}</span></td>
+</tr>

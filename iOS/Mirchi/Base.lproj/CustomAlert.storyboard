@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="wJ7-Fp-TEb">
+            <objects>
+                <viewController storyboardIdentifier="AlertViewController" id="gUh-HS-PyZ" customClass="CustomAlertViewController" customModule="Mirchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PrG-MF-HHd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrO-LS-irF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tdy-h1-GV7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-nC-ZZk" customClass="RoundedView" customModule="Mirchi" customModuleProvider="target">
+                                            <rect key="frame" x="47.5" y="212" width="280" height="243.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PXp-zW-V80">
+                                                    <rect key="frame" x="20" y="16" width="240" height="51.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{Alert Title}}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cEc-Q9-HfG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="25.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <attributedString key="userComments">
+                                                                <fragment content="#bc-ignore!">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{Alert Message}}" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-Pb-25d">
+                                                            <rect key="frame" x="0.0" y="33.5" width="240" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <attributedString key="userComments">
+                                                                <fragment content="#bc-ignore!">
+                                                                    <attributes>
+                                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-mV-Msw">
+                                                            <rect key="frame" x="0.0" y="51.5" width="240" height="0.0"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" red="0.85234917529999998" green="0.85234917529999998" blue="0.85234917529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UL4-Yc-VhW">
+                                                    <rect key="frame" x="20" y="83.5" width="240" height="148"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-iW-RHX" customClass="ShapeButton" customModule="Mirchi" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                                            <color key="backgroundColor" red="0.72653640009999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="240" id="YS4-kR-GBD"/>
+                                                                <constraint firstAttribute="height" priority="999" constant="44" id="ivO-rI-81j"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <state key="normal" title="{{Destructive Button Title}}">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <attributedString key="userComments">
+                                                                <fragment content="#bc-ignore!">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="onTapDestructive:" destination="gUh-HS-PyZ" eventType="touchUpInside" id="fRv-NG-NH1"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I0-XL-ZzG" customClass="ShapeButton" customModule="Mirchi" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="52" width="240" height="44"/>
+                                                            <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="240" id="HIH-N7-mGf"/>
+                                                                <constraint firstAttribute="height" priority="999" constant="44" id="lKh-ro-ThL"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <state key="normal" title="{{Default Button Title}}" backgroundImage="Image">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <attributedString key="userComments">
+                                                                <fragment content="#bc-ignore!">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="onTapPrimary:" destination="gUh-HS-PyZ" eventType="touchUpInside" id="yng-CP-MQk"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc4-mE-kO7" customClass="ShapeButton" customModule="Mirchi" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="104" width="240" height="44"/>
+                                                            <color key="backgroundColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" priority="999" constant="44" id="hEt-qz-wdV"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <state key="normal" title="{{Cancel Button Title}}">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <attributedString key="userComments">
+                                                                <fragment content="#bc-ignore!">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                    <real key="value" value="0.050000000000000003"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPercentage">
+                                                                    <real key="value" value="0.0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="onTapCancel:" destination="gUh-HS-PyZ" eventType="touchUpInside" id="qQo-8U-nX5"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Hc4-mE-kO7" firstAttribute="width" secondItem="4I0-XL-ZzG" secondAttribute="width" id="yyN-bl-7r4"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="3kc-28-Aof"/>
+                                                <constraint firstItem="UL4-Yc-VhW" firstAttribute="centerX" secondItem="gsy-nC-ZZk" secondAttribute="centerX" id="O4K-wc-9mf"/>
+                                                <constraint firstAttribute="trailing" secondItem="PXp-zW-V80" secondAttribute="trailing" constant="20" id="gaN-9E-fmL"/>
+                                                <constraint firstItem="UL4-Yc-VhW" firstAttribute="top" secondItem="PXp-zW-V80" secondAttribute="bottom" constant="16" id="lLi-2y-xXT"/>
+                                                <constraint firstAttribute="bottom" secondItem="UL4-Yc-VhW" secondAttribute="bottom" constant="12" id="mP3-q8-tyZ"/>
+                                                <constraint firstItem="PXp-zW-V80" firstAttribute="top" secondItem="gsy-nC-ZZk" secondAttribute="top" constant="16" id="moi-sa-kJk"/>
+                                                <constraint firstItem="PXp-zW-V80" firstAttribute="leading" secondItem="gsy-nC-ZZk" secondAttribute="leading" constant="20" id="suk-xh-m3l"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gsy-nC-ZZk" firstAttribute="centerX" secondItem="tdy-h1-GV7" secondAttribute="centerX" id="787-NR-QUk"/>
+                                        <constraint firstItem="gsy-nC-ZZk" firstAttribute="centerY" secondItem="tdy-h1-GV7" secondAttribute="centerY" id="tct-q0-BM3"/>
+                                    </constraints>
+                                </view>
+                                <gestureRecognizers/>
+                                <blurEffect style="dark"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HUH-ig-ocz" appends="YES" id="lzF-zI-DOV"/>
+                                </connections>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vrO-LS-irF" secondAttribute="bottom" id="73i-9I-7nU"/>
+                            <constraint firstAttribute="trailing" secondItem="vrO-LS-irF" secondAttribute="trailing" id="YOM-nV-zIQ"/>
+                            <constraint firstItem="vrO-LS-irF" firstAttribute="top" secondItem="PrG-MF-HHd" secondAttribute="top" id="cMK-8Q-Rjk"/>
+                            <constraint firstItem="vrO-LS-irF" firstAttribute="leading" secondItem="PrG-MF-HHd" secondAttribute="leading" id="smN-Zl-GL2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l6c-Ys-YF6"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="gsy-nC-ZZk" id="nxl-Sx-74w"/>
+                        <outlet property="cancelButton" destination="Hc4-mE-kO7" id="5VO-ma-7nb"/>
+                        <outlet property="debugMessageLabel" destination="jsb-mV-Msw" id="vUh-ua-UB4"/>
+                        <outlet property="destructiveButton" destination="eI5-iW-RHX" id="7Zw-q7-KDF"/>
+                        <outlet property="messageLabel" destination="3gD-Pb-25d" id="u2J-NB-fRp"/>
+                        <outlet property="primaryButton" destination="4I0-XL-ZzG" id="P3j-Xs-1YI"/>
+                        <outlet property="titleLabel" destination="cEc-Q9-HfG" id="FfW-QG-rgM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVg-oD-15u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HUH-ig-ocz">
+                    <connections>
+                        <action selector="onTapBackground:" destination="gUh-HS-PyZ" id="Lby-tb-zdC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="121" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="206.5" height="69"/>
+    </resources>
+</document>

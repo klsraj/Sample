@@ -1,0 +1,34 @@
+Droplet App Template License
+
+1. The License grants you, the purchaser, an ongoing, non-exclusive, worldwide license to make use of the Droplet App Template (the App Template) you have purchased. Read the rest of this license for the details that apply to your use of the App Template.
+
+2. You are licensed to use the App Template to create one single End Product for yourself or for one client (a “single application”), and the End Product may be Sold.
+
+3. An End Product is is a customised implementation of the App Template in Binary form.
+
+What you can do
+4. You can create the End Product for a client, and this license is then transferred from you to your client.
+
+5. You can Sell and make any number of copies of the single End Product.
+
+6. You can modify or manipulate the Item. You can combine the App Template with other works and make a derivative work from it. The resulting works are subject to the terms of this license. You can do these things as long as the End Product you then create is one that’s permitted under clause 3.
+
+What you can’t do
+7. This license is a “single application” license and not a “multi-use” license, which means that you can’t use the App Template to create more than one unique End Product.
+
+8. You can’t re-distribute the App Template as stock, in a tool or template, or with source files. You can’t do this with the App Template either on its own or bundled with other items, and even if you modify the App Template. You can’t re-distribute or make available the App Template as-is or with superficial modifications.
+
+9. You can’t use the Item in any application allowing an end user to customise a digital or physical product to their specific needs, such as an “on demand”, “made to order” or “build it yourself” application. You can use the App Template in this way only if you purchase a separate license for each final product incorporating the App Template that is created using the application.
+
+10. Although you can modify the App Template and therefore delete components before creating your single End Product, you can’t extract and use a single component of the App Template on a stand-alone basis.
+
+11. You must not permit an end user of the End Product to extract the App Template and use it separately from the End Product.
+
+12. You can only use the App Template for lawful purposes.
+
+Other terms
+13. This license applies in conjunction with our Terms of Service for your use of our sites. If there is an inconsistency between this license and our Terms of Service, this license will apply to the extent necessary to resolve the inconsistency.
+
+14. This license can be terminated if you breach it. If that happens, you must stop making copies of or distributing the End Product until you remove the App Template from it.
+
+15. We retain ownership of the App Template but grant you the license on these terms. This license is between us and you.

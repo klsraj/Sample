@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_HEADING_4"; ObjectID = "03g-px-Gh2"; */
+"03g-px-Gh2.text" = "Accidentally Swiped Left?";
+
+/* Class = "UIButton"; normalTitle = "HOME_PROFILE_HIDDEN_ENABLE_BUTTON"; ObjectID = "4iX-z2-INA"; */
+"4iX-z2-INA.normalTitle" = "Enable Profile";
+
+/* Class = "UIButton"; normalTitle = "SUPERLIKE_LIMIT_GET_MORE_BUTTON"; ObjectID = "8gz-pB-WHJ"; */
+"8gz-pB-WHJ.normalTitle" = "Get More Ultra Likes";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_HEADING_1"; ObjectID = "9Zh-yl-Ssk"; */
+"9Zh-yl-Ssk.text" = "Unlimited Likes";
+
+/* Class = "UILabel"; text = "HOME_OUT_OF_USERS_SUB_HEADING"; ObjectID = "Aqf-ac-6uE"; */
+"Aqf-ac-6uE.text" = "Try expanding your search area to find more people";
+
+/* Class = "UIButton"; normalTitle = "MENU_UPGRADE_BUTTON"; ObjectID = "B1R-KA-Z5A"; */
+"B1R-KA-Z5A.normalTitle" = "Get Mirchi Diamond";
+
+/* Class = "UILabel"; text = "HOME_PROFILE_HIDDEN_HEADING"; ObjectID = "C2E-4p-fYy"; */
+"C2E-4p-fYy.text" = "Your profile is hidden";
+
+/* Class = "UILabel"; text = "LIKE_LIMIT_GET_MORE_IN"; ObjectID = "HIv-Au-d44"; */
+"HIv-Au-d44.text" = "You'll Get More Likes In";
+
+/* Class = "UILabel"; text = "HOME_PROFILE_HIDDEN_SUB_HEADING"; ObjectID = "ICZ-I6-CNz"; */
+"ICZ-I6-CNz.text" = "Enable your profile to find more matches";
+
+/* Class = "UILabel"; text = "HOME_OUT_OF_USERS_HEADING"; ObjectID = "J24-Ud-Rf7"; */
+"J24-Ud-Rf7.text" = "You've run out of people";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_SUB_HEADING_2"; ObjectID = "Kwd-md-VFv"; */
+"Kwd-md-VFv.text" = "Get 5 Ultra Likes Every Day";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_HEADING_3"; ObjectID = "KxW-A3-VqA"; */
+"KxW-A3-VqA.text" = "Swipe Anywhere Worldwide";
+
+/* Class = "UIButton"; normalTitle = "MENU_SETTINGS_BUTTON"; ObjectID = "PUT-IZ-fhd"; */
+"PUT-IZ-fhd.normalTitle" = "Settings";
+
+/* Class = "UILabel"; text = "SUPERLIKE_LIMIT_LIMIT_REACHED_HEADING"; ObjectID = "YRp-g6-m5w"; */
+"YRp-g6-m5w.text" = "You're out of Ultra Likes!";
+
+/* Class = "UILabel"; text = "NEW_MATCH_HEADING"; ObjectID = "Zqy-F0-hnA"; */
+"Zqy-F0-hnA.text" = "You Matched!";
+
+/* Class = "UIButton"; normalTitle = "LIKE_LIMIT_GET_UNLIMITED_BUTTON"; ObjectID = "dWZ-eJ-GGT"; */
+"dWZ-eJ-GGT.normalTitle" = "Get Unlimited Likes";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_HEADING_2"; ObjectID = "dkY-0f-6wu"; */
+"dkY-0f-6wu.text" = "More Ultra Likes";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_SUB_HEADING_3"; ObjectID = "fdX-iE-iUf"; */
+"fdX-iE-iUf.text" = "Change Your Swiping Location With Explorer";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_SUB_HEADING_4"; ObjectID = "hd1-TG-e9A"; */
+"hd1-TG-e9A.text" = "Rewind Your Last Swipe";
+
+/* Class = "UILabel"; text = "HOME_LOCATION_ERROR_NOTICE"; ObjectID = "laA-gg-Zin"; */
+"laA-gg-Zin.text" = "Unable to determine your location";
+
+/* Class = "UIButton"; normalTitle = "NEW_MATCH_CLOSE_BUTTON"; ObjectID = "ouN-gd-EMZ"; */
+"ouN-gd-EMZ.normalTitle" = "Keep Swiping";
+
+/* Class = "UILabel"; text = "LIKE_LIMIT_LIMIT_REACHED_HEADING"; ObjectID = "qkI-oM-n62"; */
+"qkI-oM-n62.text" = "You're out of Likes!";
+
+/* Class = "UIButton"; normalTitle = "MENU_EDIT_PROFILE_BUTTON"; ObjectID = "s9L-kF-cKD"; */
+"s9L-kF-cKD.normalTitle" = "Edit Profile";
+
+/* Class = "UIButton"; normalTitle = "HOME_OUT_OF_USERS_SETTINGS_BUTTON"; ObjectID = "td2-zE-YXb"; */
+"td2-zE-YXb.normalTitle" = "Settings";
+
+/* Class = "UILabel"; text = "MENU_UPGRADE_SLIDER_SUB_HEADING_1"; ObjectID = "tql-7A-alc"; */
+"tql-7A-alc.text" = "No Limits on Swiping Right";
+
+/* Class = "UILabel"; text = "SUPERLIKE_LIMIT_GET_MORE_IN"; ObjectID = "uDx-TU-HFV"; */
+"uDx-TU-HFV.text" = "You'll Get More Ultra Likes In";
+
+/* Class = "UIButton"; normalTitle = "NEW_MATCH_SEND_MESSAGE_BUTTON"; ObjectID = "ulK-tU-uFC"; */
+"ulK-tU-uFC.normalTitle" = "Send a Message";
+
+/* Class = "UILabel"; text = "MENU_SUBSCRIBED_NOTICE"; ObjectID = "F5O-dC-zVb"; */
+"F5O-dC-zVb.text" = "You Have an Active Mirchi Diamond Subscription";

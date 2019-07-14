@@ -1,0 +1,36 @@
+
+/* Class = "UIBarButtonItem"; title = "SEND_LOCATION_CANCEL_BUTTON"; ObjectID = "2XT-vc-F2q"; */
+"2XT-vc-F2q.title" = "Cancel";
+
+/* Class = "UILabel"; text = "CHATS_NO_CHATS_HEADING"; ObjectID = "3fz-2f-2Sb"; */
+"3fz-2f-2Sb.text" = "Get Swiping";
+
+/* Class = "UIButton"; normalTitle = "CHAT_ENABLE_PUSH_NOTIFICATIONS_BUTTON"; ObjectID = "BBW-0K-x7u"; */
+"BBW-0K-x7u.normalTitle" = "Enable Push Notifications";
+
+/* Class = "UILabel"; text = "CHATS_NEW_MATCHES_HEADING"; ObjectID = "Bw1-p3-W4a"; */
+"Bw1-p3-W4a.text" = "New Matches";
+
+/* Class = "UIBarButtonItem"; title = "ATTACHMENT_VIEW_CLOSE_BUTTON"; ObjectID = "EUp-Ll-wj0"; */
+"EUp-Ll-wj0.title" = "Close";
+
+/* Class = "UIBarButtonItem"; title = "SEND_LOCATION_SEND_BUTTON"; ObjectID = "GTh-7e-cym"; */
+"GTh-7e-cym.title" = "Send";
+
+/* Class = "UISearchBar"; placeholder = "CHATS_SEARCH_BAR_PLACEHOLDER"; ObjectID = "MQC-gb-C9j"; */
+"MQC-gb-C9j.placeholder" = "Search Matches";
+
+/* Class = "UILabel"; text = "CHATS_CHATS_HEADING"; ObjectID = "bg5-i1-Jq3"; */
+"bg5-i1-Jq3.text" = "Chats";
+
+/* Class = "UILabel"; text = "CHATS_NO_CHATS_SUBHEADING"; ObjectID = "c4e-7z-vUV"; */
+"c4e-7z-vUV.text" = "Your matches will appear here.";
+
+/* Class = "UILabel"; text = "CHATS_LOADING_MESSAGE"; ObjectID = "Rul-cy-aQg"; */
+"Rul-cy-aQg.text" = "Loading Your Matches";
+
+/* Class = "UILabel"; text = "CHAT_ENABLE_PUSH_NOTIFICATIONS_MESSAGE"; ObjectID = "dwh-Zd-R3B"; */
+"dwh-Zd-R3B.text" = "Don't miss a reply!  Enable push notifications to get notified of new matches and messages.";
+
+/* Class = "UIButton"; normalTitle = "CHAT_SEND_BUTTON"; ObjectID = "y5z-br-9RP"; */
+"y5z-br-9RP.normalTitle" = "Send";

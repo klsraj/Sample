@@ -1,0 +1,7 @@
+<img class='image-to-load circular-thumbnail user-btn' 
+	{{#if this.id}}
+		data-id='{{this.id}}' data-ref='{{this.images.[0]}}' data-role='image-to-load' data-title='{{this.name}}<br/>{{this.id}}' 
+	{{else}}
+		data-title='Deleted User'
+	{{/if}}
+data-html="true" data-toggle="tooltip">	

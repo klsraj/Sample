@@ -1,0 +1,28 @@
+<tr class='message-row{{#unless incoming}}-right{{/unless}}'>
+	<td class='thumbnail-cell'>
+		{{#if incoming}}
+			<!--<img class='circular-thumbnail' data-id='{{sender_id}}' data-ref='{{sender.images.[0]}}' data-role='image-to-load'>-->
+			{{> userimage sender}}
+		{{/if}}
+	</td>
+	<td class='message-cell' title="{{text}}">
+		<span class='message-date'>{{formatDateTime timestamp}}</span>
+		<div class='message-bubble'>
+			{{#ifEq type "text"}}
+				{{text}}
+			{{/ifEq}}
+			{{#ifEq type "location"}}
+				<a href="https://www.google.com/maps/search/?api=1&query={{lat}},{{lon}}" target="_BLANK" class="attachment-message location"><img src='img/location-icon-{{#if incoming}}purple{{else}}white{{/if}}.png'></a>
+			{{/ifEq}}
+			{{#ifEq type "image"}}
+				<a href='#!' class="attachment-message" data-fullref="{{attachment_ref}}" data-role="show-attachment"><img data-ref="{{attachment_thumb_ref}}" data-role="image-to-load"></a>
+			{{/ifEq}}
+		</div>
+	</td>
+	<td class='thumbnail-cell'>
+		{{#unless incoming}}
+			<!--<img class='circular-thumbnail' data-id='{{sender_id}}' data-ref='{{sender.images.[0]}}' data-role='image-to-load'>-->
+			{{> userimage sender}}
+		{{/unless}}
+	</td>
+</tr>

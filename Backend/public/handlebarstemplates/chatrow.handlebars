@@ -1,0 +1,20 @@
+<tr data-jsonstring="{{json this}}" class="{{#if deleted}}disabled{{/if}}" data-role="view-chat">
+	<td><span title='{{id}}' data-toggle="tooltip">{{truncate id 7}}</span></td> 
+	<td class='image-cell'>
+		{{#each occupants}}
+			{{> userimage this}}
+		{{/each}}
+	</td>
+	<td><span title='{{last_message_text}}' data-toggle="tooltip">{{truncate last_message_text 30}}</span></td>
+	<td><span title="{{formatDateTime updated_at}}" data-toggle="tooltip">{{formatDateTime updated_at "short"}}</span></td>
+	<td class='actions exclude-row-click'>
+		<div class="dropdown">
+		  <button class="btn btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#!" data-id='{{id}}' data-occupants='{{json occupants}}' data-deleted='{{deleted}}' data-role="delete-chat">Delete Chat</a>
+		  </div>
+		</div>
+	</td>
+</tr>

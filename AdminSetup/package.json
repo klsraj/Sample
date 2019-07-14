@@ -1,0 +1,8 @@
+{
+  "name": "functions",
+  "description": "Droplet Admin Setup",
+  "dependencies": {
+    "firebase-admin": "~5.3"
+  },
+  "private": true
+}

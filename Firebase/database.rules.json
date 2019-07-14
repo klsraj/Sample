@@ -1,0 +1,241 @@
+{
+  "rules": {
+    ".read": "auth.token.admin === true",
+    ".write": false,
+    "licences":{
+      "$licenceKey":{
+        ".read" : true,
+        ".write": false
+      }
+    },
+    "loadtest":{
+      ".read" : true,
+      ".write" : true
+    },
+    "badge_count":{
+      "$userId":{
+        ".read" : "auth.uid === $userId",
+        ".write"  : "auth.uid === $userId || auth.token.admin === true"
+      }
+    },
+    "banned":{
+      "$userId":{
+        ".read" : "auth.uid === $userId",
+        ".write"  : "auth.token.admin === true"
+      }
+    },
+    "chats":{
+      ".indexOn" : ["updated_at"],
+      "$chatId":{
+        ".read" : "data.child('occupants/'+auth.uid).exists() && root.child('banned/'+auth.uid).val() !== true",
+        ".write"  : "(data.child('occupants/'+auth.uid).exists() && root.child('banned/'+auth.uid).val() !== true) || auth.token.admin === true"
+      }
+    },
+    "messages":{
+      ".read" : true,
+      ".write" : true,
+      "$chatId":{
+        ".indexOn" : ["timestamp"],
+        ".read" : "root.child('chats/'+$chatId+'/occupants/'+auth.uid).exists() && root.child('banned/'+auth.uid).val() !== true",
+        ".write" : "auth.token.admin === true",
+        "$messageId":{
+          ".write" : "root.child('chats/'+$chatId+'/occupants/'+auth.uid).exists()"
+        }
+      }
+    },
+    "mutual_friends":{
+      ".read" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true",
+      ".write" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true"
+    },
+    "pending_likes":{
+      "$userId":{
+        ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        ".write" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        "$likingUser":{
+          ".write" : "auth.uid === $likingUser && root.child('banned/'+auth.uid).val() !== true"
+        }
+      }
+    },
+    "receipt_validation":{
+      ".read" : "auth.uid !== null",
+      ".write" : "auth.uid !== null"
+    },
+    "reports":{
+      "$userId":{
+        "$reportId":{
+          ".write" : "auth.uid === newData.child('from').val() && root.child('banned/'+auth.uid).val() !== true"
+        }
+      }
+    },
+    "reports_summary":{
+      ".indexOn" : ["last_reported"],
+      "$userId":{
+        ".write" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true",
+        ".read" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true"
+      }
+    },
+    "super_likes":{
+      "$userId":{
+        ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        ".write" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        "$likingUser":{
+          ".write" : "auth.uid === $likingUser && root.child('banned/'+auth.uid).val() !== true"
+        }
+      }
+    },
+    "user_chats":{
+      "$userId":{
+        ".write" : "auth.token.admin === true && root.child('banned/'+auth.uid).val() !== true",
+        ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        "$chatId" : {
+          ".write" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true"
+        }
+      }
+    },
+    "user_likes":{
+      "$userId":{
+        "$likedUser":{
+          ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+          ".write" : "(auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true) || auth.token.admin === true",
+        }
+      }
+    },
+    "user_settings":{
+      "$userId":{
+        ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+        ".write" : "auth.uid === $userId"
+      }
+    },
+    "user_swipes":{
+      "$userId":{
+        "$likedUser":{
+          ".read" : "auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true",
+          ".write" : "(auth.uid === $userId && root.child('banned/'+auth.uid).val() !== true) || auth.token.admin === true",
+        }
+      }
+    },
+    "user_tokens":{
+      "$userId":{
+        ".write" : "auth.uid === $userId || auth.token.admin === true"
+      }
+    },
+    "users":{
+      ".indexOn" : ["name", "created_at", "last_sign_in"],
+      "$userId":{
+        ".read" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true",
+        ".write" : "auth.uid === $userId || auth.token.admin === true",
+        "created_at":{
+          ".validate" : "!data.exists()"
+        },
+        "like_limit_lifed":{
+          ".validate" : "newData.val() > data.val()"
+        },
+        "superlike_limit_lifed":{
+          ".validate" : "newData.val() > data.val()"
+        },
+        "banned":{
+          ".write" : "auth.token.admin === true"
+        }
+      }
+    },
+    "geo":{
+      ".read" : "auth.uid !== null && root.child('banned/'+auth.uid).val() !== true",
+      "f_f": {
+        ".indexOn": ["g"],
+        "$key": {
+          ".write": "auth !== null",
+          ".validate": "newData.hasChildren(['g', 'l'])",
+          "g": {
+            ".validate": "newData.isString() && newData.val().length <= 22 && newData.val().length > 0"
+          },
+          "l": {
+            "0" : {
+              ".validate": "newData.isNumber() && newData.val() >= -90 && newData.val() <= 90"
+            },
+            "1" : {
+              ".validate": "newData.isNumber() && newData.val() >= -180 && newData.val() <= 180"
+            },
+            "$other": {
+              ".validate": false
+            }
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      },
+      "f_m": {
+        ".indexOn": ["g"],
+        "$key": {
+          ".write": "auth !== null",
+          ".validate": "newData.hasChildren(['g', 'l'])",
+          "g": {
+            ".validate": "newData.isString() && newData.val().length <= 22 && newData.val().length > 0"
+          },
+          "l": {
+            "0" : {
+              ".validate": "newData.isNumber() && newData.val() >= -90 && newData.val() <= 90"
+            },
+            "1" : {
+              ".validate": "newData.isNumber() && newData.val() >= -180 && newData.val() <= 180"
+            },
+            "$other": {
+              ".validate": false
+            }
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      },
+      "m_m": {
+        ".indexOn": ["g"],
+        "$key": {
+          ".write": "auth !== null",
+          ".validate": "newData.hasChildren(['g', 'l'])",
+          "g": {
+            ".validate": "newData.isString() && newData.val().length <= 22 && newData.val().length > 0"
+          },
+          "l": {
+            "0" : {
+              ".validate": "newData.isNumber() && newData.val() >= -90 && newData.val() <= 90"
+            },
+            "1" : {
+              ".validate": "newData.isNumber() && newData.val() >= -180 && newData.val() <= 180"
+            },
+            "$other": {
+              ".validate": false
+            }
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      },
+      "m_f": {
+        ".indexOn": ["g"],
+        "$key": {
+          ".write": "auth !== null",
+          ".validate": "newData.hasChildren(['g', 'l'])",
+          "g": {
+            ".validate": "newData.isString() && newData.val().length <= 22 && newData.val().length > 0"
+          },
+          "l": {
+            "0" : {
+              ".validate": "newData.isNumber() && newData.val() >= -90 && newData.val() <= 90"
+            },
+            "1" : {
+              ".validate": "newData.isNumber() && newData.val() >= -180 && newData.val() <= 180"
+            },
+            "$other": {
+              ".validate": false
+            }
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      }
+    }
+  }
+}

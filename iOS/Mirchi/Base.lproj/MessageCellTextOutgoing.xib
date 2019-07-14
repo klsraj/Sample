@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Z1j-s6-liR" customClass="MessageCellTextOutgoing" customModule="Mirchi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgb-pv-7tm">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="142"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-Gk-lBm" customClass="MessageBubble" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="223.5" y="18" width="144.5" height="42"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="725" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" scrollEnabled="NO" editable="NO" text="{{Message Text}}" translatesAutoresizingMaskIntoConstraints="NO" id="NRg-WC-kpu" customClass="UITextViewNoInsets" customModule="Mirchi" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="12" width="116.5" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!">
+                                                <attributes>
+                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="0.65100599315068497" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NRg-WC-kpu" firstAttribute="top" secondItem="d3c-Gk-lBm" secondAttribute="top" constant="12" id="DnR-vN-3is"/>
+                                    <constraint firstItem="NRg-WC-kpu" firstAttribute="leading" secondItem="d3c-Gk-lBm" secondAttribute="leading" priority="720" constant="14" id="K6A-bn-XIf"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRg-WC-kpu" secondAttribute="trailing" priority="720" constant="14" id="hpq-FZ-VKd"/>
+                                    <constraint firstItem="NRg-WC-kpu" firstAttribute="centerX" secondItem="d3c-Gk-lBm" secondAttribute="centerX" id="jQd-b3-LMT"/>
+                                    <constraint firstAttribute="bottom" secondItem="NRg-WC-kpu" secondAttribute="bottom" constant="12" id="odk-fX-Sbo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="1000" text="{{Message Date}}" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sb-PM-gCg">
+                                <rect key="frame" x="278.5" y="4" width="84.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="ow6-Xz-sut"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Sb-PM-gCg" firstAttribute="top" secondItem="fgb-pv-7tm" secondAttribute="top" constant="4" id="0w2-Dd-iaU"/>
+                            <constraint firstAttribute="bottom" secondItem="d3c-Gk-lBm" secondAttribute="bottom" priority="700" constant="4" id="7dH-DD-osd"/>
+                            <constraint firstItem="d3c-Gk-lBm" firstAttribute="leading" secondItem="fgb-pv-7tm" secondAttribute="leading" priority="700" constant="66" id="Eio-tx-WVF"/>
+                            <constraint firstItem="3Sb-PM-gCg" firstAttribute="trailing" secondItem="d3c-Gk-lBm" secondAttribute="trailing" constant="-5" id="YFo-4A-PB0"/>
+                            <constraint firstAttribute="trailing" secondItem="d3c-Gk-lBm" secondAttribute="trailing" constant="8" id="d7Q-wK-OYn"/>
+                            <constraint firstAttribute="width" priority="900" constant="375" id="ohg-2Y-TcP"/>
+                            <constraint firstItem="d3c-Gk-lBm" firstAttribute="top" secondItem="3Sb-PM-gCg" secondAttribute="bottom" constant="2" id="vMZ-rk-1TT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fgb-pv-7tm" secondAttribute="bottom" id="4ew-46-N5j"/>
+                <constraint firstItem="fgb-pv-7tm" firstAttribute="top" secondItem="Z1j-s6-liR" secondAttribute="top" id="Cu8-O1-Wsp"/>
+                <constraint firstAttribute="trailing" secondItem="fgb-pv-7tm" secondAttribute="trailing" id="l5V-Gh-lKe"/>
+                <constraint firstItem="fgb-pv-7tm" firstAttribute="leading" secondItem="Z1j-s6-liR" secondAttribute="leading" id="vLJ-0g-PQ3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QlA-S1-ekC"/>
+            <size key="customSize" width="376" height="142"/>
+            <connections>
+                <outlet property="cellWidthConstraint" destination="ohg-2Y-TcP" id="jjc-UH-1hP"/>
+                <outlet property="contentBottomConstraint" destination="odk-fX-Sbo" id="0cy-DW-yis"/>
+                <outlet property="contentLeadingConstraint" destination="K6A-bn-XIf" id="jLK-wf-QoL"/>
+                <outlet property="contentTopConstraint" destination="DnR-vN-3is" id="zfV-eh-tld"/>
+                <outlet property="contentTrailingConstraint" destination="hpq-FZ-VKd" id="TCB-0c-yj6"/>
+                <outlet property="messageBubble" destination="d3c-Gk-lBm" id="WRq-HA-hiY"/>
+                <outlet property="messageBubbleBottomConstraint" destination="7dH-DD-osd" id="jjH-ea-73e"/>
+                <outlet property="messageBubbleLeadingConstraint" destination="Eio-tx-WVF" id="ybM-8e-KwD"/>
+                <outlet property="messageBubbleTopConstraint" destination="vMZ-rk-1TT" id="3m8-Cb-spE"/>
+                <outlet property="messageBubbleTrailingConstraint" destination="d7Q-wK-OYn" id="Rvv-9A-VeK"/>
+                <outlet property="messageTextView" destination="NRg-WC-kpu" id="ka2-fO-Ru3"/>
+                <outlet property="timestampHeightConstraint" destination="ow6-Xz-sut" id="Qu5-Iw-fOD"/>
+                <outlet property="timestampLabel" destination="3Sb-PM-gCg" id="2Em-iU-aFP"/>
+                <outlet property="timestampTopConstraint" destination="0w2-Dd-iaU" id="GyE-ia-63e"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="4"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIn-VG-K1I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report View Controller-->
+        <scene sceneID="Hy8-O8-Ikp">
+            <objects>
+                <viewController storyboardIdentifier="ReportViewController" id="bIn-VG-K1I" customClass="ReportViewController" customModule="Mirchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCS-mg-jXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM2-RV-jTn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U8x-E7-qnV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRL-6G-L8N" customClass="RoundedView" customModule="Mirchi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="174" width="327" height="319.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{Report Title}}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-K9-hev">
+                                                    <rect key="frame" x="16" y="16" width="295" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <attributedString key="userComments">
+                                                        <fragment content="#bc-ignore!">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT_ALERT_SUB_HEADING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSl-c1-8BL">
+                                                    <rect key="frame" x="16" y="50.5" width="295" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-sZ-Ak5">
+                                                    <rect key="frame" x="0.0" y="83.5" width="327" height="184"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-VR-Bkf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="FDj-lg-zsg"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="tintColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="REPORT_ALERT_OFFENSIVE_MESSAGES_OPTION" image="ReportLanguageIcon">
+                                                                <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="didTapOffensiveMessages:" destination="bIn-VG-K1I" eventType="touchUpInside" id="lnc-Ia-EKE"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEe-fa-Fmt">
+                                                            <rect key="frame" x="0.0" y="44" width="327" height="2"/>
+                                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="Mb8-G5-qae"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-6l-8P8">
+                                                            <rect key="frame" x="0.0" y="46" width="327" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="SqE-0R-7IO"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="tintColor" red="0.13725490200000001" green="0.88235294119999996" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="REPORT_ALERT_OFFENSIVE_PROFILE_OPTION" image="ReportProfileIcon">
+                                                                <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="didTapOffensiveProfile:" destination="bIn-VG-K1I" eventType="touchUpInside" id="Zuq-ZP-xPn"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTd-Bz-heY">
+                                                            <rect key="frame" x="0.0" y="90" width="327" height="2"/>
+                                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="WCO-Dt-J4M"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBy-l8-dMp">
+                                                            <rect key="frame" x="0.0" y="92" width="327" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="hiC-7e-B4e"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="tintColor" red="1" green="0.2156862745" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="REPORT_ALERT_SPAM_OPTION" image="ReportSpamIcon">
+                                                                <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="didTapSpam:" destination="bIn-VG-K1I" eventType="touchUpInside" id="zcr-Jm-npc"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xf8-fX-Ybh">
+                                                            <rect key="frame" x="0.0" y="136" width="327" height="2"/>
+                                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="eAf-67-rfW"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCZ-F2-wM5">
+                                                            <rect key="frame" x="0.0" y="138" width="327" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="JlC-cr-5jW"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="tintColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="REPORT_ALERT_OTHER_OPTION" image="ReportOtherIcon">
+                                                                <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="TyG-wS-4d3" kind="presentation" id="Bbr-Mn-EBr"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-L8-4Y1">
+                                                            <rect key="frame" x="0.0" y="182" width="327" height="2"/>
+                                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="ssP-QZ-PYF"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-Aj-fYo">
+                                                    <rect key="frame" x="16" y="271.5" width="295" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="eCi-vv-8GK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <state key="normal" title="REPORT_ALERT_CANCEL_BUTTON">
+                                                        <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapCancel:" destination="bIn-VG-K1I" eventType="touchUpInside" id="yKg-SE-ixd"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="YSl-c1-8BL" firstAttribute="top" secondItem="rfL-K9-hev" secondAttribute="bottom" constant="8" id="3Jf-nr-UKG"/>
+                                                <constraint firstAttribute="trailing" secondItem="YSl-c1-8BL" secondAttribute="trailing" constant="16" id="8Sz-zY-fCn"/>
+                                                <constraint firstItem="rfL-K9-hev" firstAttribute="top" secondItem="LRL-6G-L8N" secondAttribute="top" constant="16" id="FgO-DT-lVD"/>
+                                                <constraint firstItem="fxz-Aj-fYo" firstAttribute="top" secondItem="IgF-sZ-Ak5" secondAttribute="bottom" constant="4" id="ICo-UN-7gY"/>
+                                                <constraint firstItem="IgF-sZ-Ak5" firstAttribute="top" secondItem="YSl-c1-8BL" secondAttribute="bottom" constant="16" id="Mns-oS-twg"/>
+                                                <constraint firstItem="rfL-K9-hev" firstAttribute="leading" secondItem="LRL-6G-L8N" secondAttribute="leading" constant="16" id="OaP-o3-vzG"/>
+                                                <constraint firstItem="YSl-c1-8BL" firstAttribute="leading" secondItem="LRL-6G-L8N" secondAttribute="leading" constant="16" id="QU3-UZ-aXV"/>
+                                                <constraint firstAttribute="bottom" secondItem="fxz-Aj-fYo" secondAttribute="bottom" constant="4" id="RyD-Sw-kBO"/>
+                                                <constraint firstAttribute="trailing" secondItem="fxz-Aj-fYo" secondAttribute="trailing" constant="16" id="UKi-WY-Vwr"/>
+                                                <constraint firstItem="fxz-Aj-fYo" firstAttribute="leading" secondItem="LRL-6G-L8N" secondAttribute="leading" constant="16" id="h20-wj-VI2"/>
+                                                <constraint firstAttribute="trailing" secondItem="IgF-sZ-Ak5" secondAttribute="trailing" id="mTK-G5-1Lc"/>
+                                                <constraint firstAttribute="trailing" secondItem="rfL-K9-hev" secondAttribute="trailing" constant="16" id="n96-7a-Hfs"/>
+                                                <constraint firstItem="IgF-sZ-Ak5" firstAttribute="leading" secondItem="LRL-6G-L8N" secondAttribute="leading" id="oKZ-s0-icW"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LRL-6G-L8N" firstAttribute="leading" secondItem="U8x-E7-qnV" secondAttribute="leading" constant="24" id="FdL-wf-D2Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="LRL-6G-L8N" secondAttribute="trailing" constant="24" id="PMc-RT-vHS"/>
+                                        <constraint firstItem="LRL-6G-L8N" firstAttribute="centerY" secondItem="U8x-E7-qnV" secondAttribute="centerY" id="ubC-ce-L7r"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sM2-RV-jTn" firstAttribute="leading" secondItem="LCS-mg-jXo" secondAttribute="leading" id="6p9-Tz-BOy"/>
+                            <constraint firstAttribute="bottom" secondItem="sM2-RV-jTn" secondAttribute="bottom" id="Oo7-jh-UEg"/>
+                            <constraint firstAttribute="trailing" secondItem="sM2-RV-jTn" secondAttribute="trailing" id="sSa-l0-Jfg"/>
+                            <constraint firstItem="sM2-RV-jTn" firstAttribute="top" secondItem="LCS-mg-jXo" secondAttribute="top" id="z4T-yM-2fE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ggc-TJ-PXk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kBs-HJ-buC"/>
+                    <connections>
+                        <outlet property="alertView" destination="LRL-6G-L8N" id="7gL-HO-PfD"/>
+                        <outlet property="reportMessagesButton" destination="8sR-VR-Bkf" id="bx5-Ut-1zo"/>
+                        <outlet property="titleLabel" destination="rfL-K9-hev" id="N2v-yT-MHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uod-hy-uIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="116"/>
+        </scene>
+        <!--Report Details View Controller-->
+        <scene sceneID="s7R-Zg-XKe">
+            <objects>
+                <viewController storyboardIdentifier="ReportDetailsViewController" id="TyG-wS-4d3" customClass="ReportDetailsViewController" customModule="Mirchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOD-s2-w8m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQ1-3C-Jvo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vMm-Nc-xMW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAR-fZ-uIp" customClass="RoundedView" customModule="Mirchi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="199.5" width="327" height="268.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{Report Title}}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFV-QC-DFh">
+                                                    <rect key="frame" x="86.5" y="16" width="154.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <attributedString key="userComments">
+                                                        <fragment content="#bc-ignore!">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT_DETAILS_ALERT_SUB_HEADING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvj-zD-Tic">
+                                                    <rect key="frame" x="16" y="50.5" width="295" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="REPORT_DETAILS_TEXT_FIELD_PLACEHOLDER" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jr-dx-ilQ">
+                                                    <rect key="frame" x="24" y="124.5" width="279" height="20"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="TyG-wS-4d3" id="47c-rb-L7k"/>
+                                                    </connections>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-J3-V4i" customClass="ShapeButton" customModule="Mirchi" customModuleProvider="target">
+                                                    <rect key="frame" x="17.5" y="168.5" width="292" height="44"/>
+                                                    <color key="backgroundColor" red="1" green="0.2156862745" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="E6M-e1-QbD"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="l9t-Qw-txa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <state key="normal" title="REPORT_DETAILS_REPORT_BUTTON"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapReport:" destination="TyG-wS-4d3" eventType="touchUpInside" id="7vU-q3-9SN"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJV-rb-SAv">
+                                                    <rect key="frame" x="16" y="220.5" width="295" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="6Lz-o4-raH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <state key="normal" title="REPORT_DETAILS_CANCEL_BUTTON">
+                                                        <color key="titleColor" red="0.77954276840000003" green="0.77854377299999999" blue="0.79599373470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapCancel:" destination="TyG-wS-4d3" eventType="touchUpInside" id="RG0-ox-hrG"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT_DETAILS_INPUT_HEADING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alc-e3-2iP">
+                                                    <rect key="frame" x="16.5" y="87.5" width="294.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="bJV-rb-SAv" firstAttribute="top" secondItem="MPJ-J3-V4i" secondAttribute="bottom" constant="8" id="5CU-1D-F64"/>
+                                                <constraint firstItem="hvj-zD-Tic" firstAttribute="top" secondItem="mFV-QC-DFh" secondAttribute="bottom" constant="8" id="AOq-A1-ujh"/>
+                                                <constraint firstItem="MPJ-J3-V4i" firstAttribute="centerX" secondItem="hAR-fZ-uIp" secondAttribute="centerX" id="ArO-3Y-IUd"/>
+                                                <constraint firstItem="Alc-e3-2iP" firstAttribute="centerX" secondItem="hAR-fZ-uIp" secondAttribute="centerX" id="KdC-nL-igH"/>
+                                                <constraint firstAttribute="bottom" secondItem="bJV-rb-SAv" secondAttribute="bottom" constant="4" id="MNd-U9-fli"/>
+                                                <constraint firstItem="MPJ-J3-V4i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hAR-fZ-uIp" secondAttribute="leading" constant="8" id="PcM-D2-nb0"/>
+                                                <constraint firstItem="hvj-zD-Tic" firstAttribute="leading" secondItem="hAR-fZ-uIp" secondAttribute="leading" constant="16" id="ROH-ZG-bc1"/>
+                                                <constraint firstItem="mFV-QC-DFh" firstAttribute="centerX" secondItem="hAR-fZ-uIp" secondAttribute="centerX" id="TqR-bP-8fU"/>
+                                                <constraint firstItem="hvj-zD-Tic" firstAttribute="centerX" secondItem="hAR-fZ-uIp" secondAttribute="centerX" id="V7k-fh-7DL"/>
+                                                <constraint firstAttribute="trailing" secondItem="bJV-rb-SAv" secondAttribute="trailing" constant="16" id="Vic-he-Tyi"/>
+                                                <constraint firstAttribute="trailing" secondItem="5jr-dx-ilQ" secondAttribute="trailing" constant="24" id="j61-9N-kdL"/>
+                                                <constraint firstItem="MPJ-J3-V4i" firstAttribute="top" secondItem="5jr-dx-ilQ" secondAttribute="bottom" constant="24" id="kC8-6N-kbH"/>
+                                                <constraint firstItem="5jr-dx-ilQ" firstAttribute="leading" secondItem="hAR-fZ-uIp" secondAttribute="leading" constant="24" id="mMK-tE-jmK"/>
+                                                <constraint firstItem="mFV-QC-DFh" firstAttribute="top" secondItem="hAR-fZ-uIp" secondAttribute="top" constant="16" id="niJ-je-Of0"/>
+                                                <constraint firstAttribute="trailing" secondItem="hvj-zD-Tic" secondAttribute="trailing" constant="16" id="txd-Wi-GVe"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MPJ-J3-V4i" secondAttribute="trailing" constant="8" id="vf5-Oj-K5E"/>
+                                                <constraint firstItem="Alc-e3-2iP" firstAttribute="top" secondItem="hvj-zD-Tic" secondAttribute="bottom" constant="20" id="xl2-S2-aaI"/>
+                                                <constraint firstItem="5jr-dx-ilQ" firstAttribute="top" secondItem="Alc-e3-2iP" secondAttribute="bottom" constant="16" id="y6G-hj-aCd"/>
+                                                <constraint firstItem="bJV-rb-SAv" firstAttribute="leading" secondItem="hAR-fZ-uIp" secondAttribute="leading" constant="16" id="zL1-by-fLZ"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hAR-fZ-uIp" firstAttribute="leading" secondItem="vMm-Nc-xMW" secondAttribute="leading" constant="24" id="FL5-ah-SzG"/>
+                                        <constraint firstAttribute="trailing" secondItem="hAR-fZ-uIp" secondAttribute="trailing" constant="24" id="dyR-TR-gag"/>
+                                        <constraint firstItem="hAR-fZ-uIp" firstAttribute="centerY" secondItem="vMm-Nc-xMW" secondAttribute="centerY" id="xk8-5V-8Rg"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AQ1-3C-Jvo" firstAttribute="leading" secondItem="gOD-s2-w8m" secondAttribute="leading" id="Lja-29-kqN"/>
+                            <constraint firstAttribute="bottom" secondItem="AQ1-3C-Jvo" secondAttribute="bottom" id="oPo-13-eM4"/>
+                            <constraint firstAttribute="trailing" secondItem="AQ1-3C-Jvo" secondAttribute="trailing" id="p2C-Zl-ELZ"/>
+                            <constraint firstItem="AQ1-3C-Jvo" firstAttribute="top" secondItem="gOD-s2-w8m" secondAttribute="top" id="p6O-5m-5Uf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DOj-3h-c3t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dci-fO-m5k"/>
+                    <connections>
+                        <outlet property="alertView" destination="hAR-fZ-uIp" id="vBv-vU-Krb"/>
+                        <outlet property="centreVerticalConstraint" destination="xk8-5V-8Rg" id="ex6-6c-ubQ"/>
+                        <outlet property="detailsTextField" destination="5jr-dx-ilQ" id="v8X-ve-SfC"/>
+                        <outlet property="reportButton" destination="MPJ-J3-V4i" id="0YW-VL-SjA"/>
+                        <outlet property="titleLabel" destination="mFV-QC-DFh" id="kC9-PV-Bab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymr-K6-aP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.5999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ReportLanguageIcon" width="44" height="44"/>
+        <image name="ReportOtherIcon" width="44" height="44"/>
+        <image name="ReportProfileIcon" width="44" height="44"/>
+        <image name="ReportSpamIcon" width="44" height="44"/>
+    </resources>
+</document>

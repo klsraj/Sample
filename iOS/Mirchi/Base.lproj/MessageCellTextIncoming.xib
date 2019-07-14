@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BK0-N3-Iet" customClass="MessageCellTextIncoming" customModule="Mirchi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-mi-xHa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY2-iG-AeA" customClass="MessageBubble" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="60" y="18" width="144.5" height="42"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="725" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" scrollEnabled="NO" editable="NO" text="{{Message Text}}" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="udF-WP-bJO" customClass="UITextViewNoInsets" customModule="Mirchi" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="12" width="116.5" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!">
+                                                <attributes>
+                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="udF-WP-bJO" firstAttribute="top" secondItem="jY2-iG-AeA" secondAttribute="top" constant="12" id="1hK-bD-GtC"/>
+                                    <constraint firstAttribute="trailing" secondItem="udF-WP-bJO" secondAttribute="trailing" priority="720" constant="14" id="Nfe-4g-93n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Y3f-Av-mKy"/>
+                                    <constraint firstItem="udF-WP-bJO" firstAttribute="leading" secondItem="jY2-iG-AeA" secondAttribute="leading" priority="720" constant="14" id="crh-6X-xph"/>
+                                    <constraint firstItem="udF-WP-bJO" firstAttribute="centerX" secondItem="jY2-iG-AeA" secondAttribute="centerX" id="sz1-hW-tuU"/>
+                                    <constraint firstAttribute="bottom" secondItem="udF-WP-bJO" secondAttribute="bottom" constant="12" id="xPF-sn-hCq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Y3f-Av-mKy"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5r-Hb-61o" customClass="ProfileImageButton" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="8" y="18" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="94b-WL-v8v"/>
+                                    <constraint firstAttribute="width" secondItem="Y5r-Hb-61o" secondAttribute="height" id="yth-75-wNy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPercentage">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapProfile:" destination="BK0-N3-Iet" eventType="touchUpInside" id="VZn-SD-YoO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="1000" text="{{Message Date}}" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-KQ-N4t">
+                                <rect key="frame" x="65" y="4" width="84.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="X9I-MH-uMK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jY2-iG-AeA" firstAttribute="top" secondItem="8FW-KQ-N4t" secondAttribute="bottom" constant="2" id="9mZ-zB-BWJ"/>
+                            <constraint firstAttribute="bottom" secondItem="jY2-iG-AeA" secondAttribute="bottom" priority="700" constant="4" id="EH0-YJ-Qzp"/>
+                            <constraint firstAttribute="width" priority="750" constant="375" id="FzE-Yi-zHr"/>
+                            <constraint firstItem="8FW-KQ-N4t" firstAttribute="top" secondItem="tVd-mi-xHa" secondAttribute="top" constant="4" id="G81-a7-b4w"/>
+                            <constraint firstItem="jY2-iG-AeA" firstAttribute="leading" secondItem="Y5r-Hb-61o" secondAttribute="trailing" constant="8" id="gpG-Ww-Lil"/>
+                            <constraint firstItem="Y5r-Hb-61o" firstAttribute="leading" secondItem="tVd-mi-xHa" secondAttribute="leading" constant="8" id="nDr-bR-OKz"/>
+                            <constraint firstItem="jY2-iG-AeA" firstAttribute="leading" secondItem="8FW-KQ-N4t" secondAttribute="leading" constant="-5" id="ukd-6E-BB1"/>
+                            <constraint firstItem="jY2-iG-AeA" firstAttribute="top" secondItem="Y5r-Hb-61o" secondAttribute="top" id="wiH-WJ-eHg"/>
+                            <constraint firstAttribute="trailing" secondItem="jY2-iG-AeA" secondAttribute="trailing" priority="700" constant="44" id="zWf-P0-hc6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tVd-mi-xHa" firstAttribute="leading" secondItem="BK0-N3-Iet" secondAttribute="leading" id="0vf-6F-VT8"/>
+                <constraint firstAttribute="trailing" secondItem="tVd-mi-xHa" secondAttribute="trailing" id="IFH-9C-qvU"/>
+                <constraint firstItem="tVd-mi-xHa" firstAttribute="top" secondItem="BK0-N3-Iet" secondAttribute="top" id="Low-X4-kVk"/>
+                <constraint firstAttribute="bottom" secondItem="tVd-mi-xHa" secondAttribute="bottom" id="OFQ-oU-Gfz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="I0D-Sb-yL0"/>
+            <size key="customSize" width="375" height="113"/>
+            <connections>
+                <outlet property="cellWidthConstraint" destination="FzE-Yi-zHr" id="YUP-RX-V7B"/>
+                <outlet property="contentBottomConstraint" destination="xPF-sn-hCq" id="UkN-RF-Inq"/>
+                <outlet property="contentLeadingConstraint" destination="crh-6X-xph" id="D6Z-41-BeC"/>
+                <outlet property="contentTopConstraint" destination="1hK-bD-GtC" id="Z1Y-31-OVP"/>
+                <outlet property="contentTrailingConstraint" destination="Nfe-4g-93n" id="5Pc-XY-BTI"/>
+                <outlet property="messageBubble" destination="jY2-iG-AeA" id="Mgc-TE-79I"/>
+                <outlet property="messageBubbleBottomConstraint" destination="EH0-YJ-Qzp" id="IJd-Nm-Heh"/>
+                <outlet property="messageBubbleLeadingConstraint" destination="gpG-Ww-Lil" id="Oxg-UG-MGK"/>
+                <outlet property="messageBubbleTopConstraint" destination="9mZ-zB-BWJ" id="CnL-tO-tlk"/>
+                <outlet property="messageBubbleTrailingConstraint" destination="zWf-P0-hc6" id="ibN-XL-2CD"/>
+                <outlet property="messageTextView" destination="udF-WP-bJO" id="s2d-Ms-SkD"/>
+                <outlet property="profileImageButton" destination="Y5r-Hb-61o" id="UQG-m9-uFA"/>
+                <outlet property="profileImageLeadingConstraint" destination="nDr-bR-OKz" id="qFJ-9x-jJj"/>
+                <outlet property="profileImageWidthConstraint" destination="94b-WL-v8v" id="TPV-qM-J0W"/>
+                <outlet property="timestampHeightConstraint" destination="X9I-MH-uMK" id="jUQ-In-6kF"/>
+                <outlet property="timestampLabel" destination="8FW-KQ-N4t" id="1E2-ot-q3H"/>
+                <outlet property="timestampTopConstraint" destination="G81-a7-b4w" id="UfQ-eb-3U9"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-18.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Mirchi {
+  umbrella header "Pods-Mirchi-umbrella.h"
+
+  export *
+  module * { export * }
+}

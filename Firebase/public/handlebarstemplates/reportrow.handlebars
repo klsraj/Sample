@@ -1,0 +1,11 @@
+<tr data-jsonstring="{{json this}}" data-role="view-report">
+	<!--<td title='{{user.id}}'>{{truncate user.id 7}}</td> 
+	<td class='image-cell' title='{{user.id}}'><img class='circular-thumbnail' data-ref='{{user.images.[0]}}' data-role='image-to-load'></td>
+	<td>{{user.name}}</td>-->
+	<td class='image-cell'>
+		<!--<img class='circular-thumbnail' data-ref='{{user.images.[0]}}' data-role='image-to-load' title='{{user.name}}<br/>{{user.id}}' data-html='true' data-toggle='tooltip'>-->
+		{{> userimage user}}
+	</td>
+	<td>{{report_count}}</td>
+	<td><span title="{{formatDateTime last_reported}}" data-toggle="tooltip">{{formatDateTime last_reported "short"}}</span></td>
+</tr>

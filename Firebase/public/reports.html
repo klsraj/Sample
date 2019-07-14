@@ -1,0 +1,50 @@
+<div class='heading'>
+  Reports
+</div>
+
+<div class="table-responsive mb-4">
+  <table class="reports-table table-custom-bordered middle-aligned-table table table-hover" data-type="reports" data-role="reports-table">
+    <thead>
+      <tr class='functions-row'>
+        <th colspan="5">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <div class='search-field-container input-group' data-role='search-field-container'>
+              <input type="text" class="form-control search-field w-100" placeholder="Search reports by User ID" data-role="search-field">
+            </div>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>Reported User</th>
+        <th><a class='sorting-link' data-role="sort-key" data-name="report_count" data-desc="true" href="#!">Total Reports <div class='sorting-order-icons'><i class="fa fa-caret-up fa-lg"></i><i class="fa fa-caret-down fa-lg"></i></div></a></th>
+        <th><a class='sorting-link' data-role="sort-key" data-name="last_reported" data-desc="true" data-active="true" href="#!">Last Reported <div class='sorting-order-icons'><i class="fa fa-caret-up fa-lg"></i><i class="fa fa-caret-down fa-lg"></i></div></a></th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+
+<nav class="nav pagination-bar">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      # Per Page
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#!" data-role="limit" data-limit='10'>10</a>
+      <a class="dropdown-item" href="#!" data-role="limit" data-limit='25'>25</a>
+      <a class="dropdown-item" href="#!" data-role="limit" data-limit='50'>50</a>
+    </div>
+  </div>
+  <ul class="pagination ml-auto">
+    <li class="page-item disabled">
+      <a class="page-link" id="page-prev" data-role='page-prev' href="#!">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" id="page-next" data-role='page-next' href="#!" >Next</a>
+    </li>
+  </ul>
+</nav>

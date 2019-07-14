@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2bI-nA-Nmk" customClass="MessageCellAttachmentOutgoing" customModule="Mirchi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCZ-im-wog">
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="194"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faj-M6-Jsr" customClass="MessageBubble" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="199.5" y="18" width="169.5" height="169.5"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-GA-QK4">
+                                        <rect key="frame" x="66" y="66.5" width="37" height="37"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-kn-MbT">
+                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bo4-kn-MbT" secondAttribute="height" id="nQg-wx-1jy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="qUB-GA-QK4" firstAttribute="centerX" secondItem="Faj-M6-Jsr" secondAttribute="centerX" id="9gq-ED-uTS"/>
+                                    <constraint firstItem="bo4-kn-MbT" firstAttribute="top" secondItem="Faj-M6-Jsr" secondAttribute="top" id="B0B-AU-ZMU"/>
+                                    <constraint firstAttribute="trailing" secondItem="bo4-kn-MbT" secondAttribute="trailing" id="Foi-QA-biM"/>
+                                    <constraint firstAttribute="bottom" secondItem="bo4-kn-MbT" secondAttribute="bottom" id="Gad-hV-5io"/>
+                                    <constraint firstItem="qUB-GA-QK4" firstAttribute="centerY" secondItem="Faj-M6-Jsr" secondAttribute="centerY" id="L1y-Ao-EVE"/>
+                                    <constraint firstItem="bo4-kn-MbT" firstAttribute="leading" secondItem="Faj-M6-Jsr" secondAttribute="leading" id="MKQ-yL-jrA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="1000" text="{{Message Date}}" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-hr-dyP">
+                                <rect key="frame" x="279.5" y="4" width="84.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="zYy-iz-ukw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="900" constant="375" id="2hc-nt-uJJ"/>
+                            <constraint firstItem="1OP-hr-dyP" firstAttribute="top" secondItem="qCZ-im-wog" secondAttribute="top" constant="4" id="A2v-5c-w5R"/>
+                            <constraint firstAttribute="bottom" secondItem="Faj-M6-Jsr" secondAttribute="bottom" priority="700" constant="4" id="GU5-hJ-P5j"/>
+                            <constraint firstItem="Faj-M6-Jsr" firstAttribute="leading" secondItem="qCZ-im-wog" secondAttribute="leading" priority="700" constant="66" id="O5g-pi-cP8"/>
+                            <constraint firstItem="Faj-M6-Jsr" firstAttribute="top" secondItem="1OP-hr-dyP" secondAttribute="bottom" constant="2" id="OSG-ld-UB9"/>
+                            <constraint firstItem="1OP-hr-dyP" firstAttribute="trailing" secondItem="Faj-M6-Jsr" secondAttribute="trailing" constant="-5" id="gSY-Tf-2Dp"/>
+                            <constraint firstItem="bo4-kn-MbT" firstAttribute="width" secondItem="qCZ-im-wog" secondAttribute="width" multiplier="0.45" id="hg8-jR-rjX"/>
+                            <constraint firstAttribute="trailing" secondItem="Faj-M6-Jsr" secondAttribute="trailing" constant="8" id="yBf-Xb-UnF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qCZ-im-wog" secondAttribute="trailing" id="4fX-Fp-Dao"/>
+                <constraint firstItem="qCZ-im-wog" firstAttribute="top" secondItem="2bI-nA-Nmk" secondAttribute="top" id="7vW-6V-j14"/>
+                <constraint firstItem="qCZ-im-wog" firstAttribute="leading" secondItem="2bI-nA-Nmk" secondAttribute="leading" id="AeJ-et-eEu"/>
+                <constraint firstAttribute="bottom" secondItem="qCZ-im-wog" secondAttribute="bottom" id="QRG-pR-VMa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zl9-Og-l4z"/>
+            <size key="customSize" width="377" height="194"/>
+            <connections>
+                <outlet property="activityIndicator" destination="qUB-GA-QK4" id="44q-Cx-D3O"/>
+                <outlet property="attachmentImageView" destination="bo4-kn-MbT" id="Y3C-ia-9hD"/>
+                <outlet property="attachmentImageViewProportionConstraint" destination="hg8-jR-rjX" id="7KG-IY-wfm"/>
+                <outlet property="cellWidthConstraint" destination="2hc-nt-uJJ" id="NI9-gJ-Bvy"/>
+                <outlet property="contentBottomConstraint" destination="Gad-hV-5io" id="jGz-zt-8Zq"/>
+                <outlet property="contentLeadingConstraint" destination="MKQ-yL-jrA" id="1IO-Uh-IlT"/>
+                <outlet property="contentTopConstraint" destination="B0B-AU-ZMU" id="zg4-Wf-Jhi"/>
+                <outlet property="contentTrailingConstraint" destination="Foi-QA-biM" id="fx3-Hr-i6q"/>
+                <outlet property="messageBubble" destination="Faj-M6-Jsr" id="DW6-Ng-tmq"/>
+                <outlet property="messageBubbleBottomConstraint" destination="GU5-hJ-P5j" id="z6L-LR-crf"/>
+                <outlet property="messageBubbleLeadingConstraint" destination="O5g-pi-cP8" id="cgD-lZ-ukR"/>
+                <outlet property="messageBubbleTopConstraint" destination="OSG-ld-UB9" id="FQT-4M-CuO"/>
+                <outlet property="messageBubbleTrailingConstraint" destination="yBf-Xb-UnF" id="t2F-kT-ZQk"/>
+                <outlet property="timestampHeightConstraint" destination="zYy-iz-ukw" id="qGi-Cb-bGQ"/>
+                <outlet property="timestampLabel" destination="1OP-hr-dyP" id="kF9-CO-NXm"/>
+                <outlet property="timestampTopConstraint" destination="A2v-5c-w5R" id="w5m-fJ-t0q"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="22"/>
+        </collectionViewCell>
+    </objects>
+</document>

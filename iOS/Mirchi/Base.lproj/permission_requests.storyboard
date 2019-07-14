@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4F6-Hb-0Sk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--location_permission_request-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="location_permission_request" title="location_permission_request" id="BYZ-38-t0r" customClass="LocationPermissionRequestViewController" customModule="Droplet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION_PERMISSION_MESSAGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vG-S9-LZx">
+                                <rect key="frame" x="32" y="300.5" width="311" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessageLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0I0-qm-vhg">
+                                <rect key="frame" x="127" y="156.5" width="120" height="120"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0I0-qm-vhg" secondAttribute="height" id="cgl-2D-Xek"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M62-ch-17t">
+                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="AOs-6A-ZIe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="LOCATION_PERMISSION_ALLOW_BUTTON">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.76862745099999996" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAllow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0r-VX-TbE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.76862745099999996" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1vG-S9-LZx" secondAttribute="trailing" constant="16" id="3vZ-Pz-7Kz"/>
+                            <constraint firstItem="M62-ch-17t" firstAttribute="leading" secondItem="ZjJ-7p-54F" secondAttribute="leading" id="Cjs-jH-aGv"/>
+                            <constraint firstItem="1vG-S9-LZx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="DW0-lW-Jbo"/>
+                            <constraint firstItem="ZjJ-7p-54F" firstAttribute="bottom" secondItem="M62-ch-17t" secondAttribute="bottom" id="NNB-aY-E9o"/>
+                            <constraint firstItem="0I0-qm-vhg" firstAttribute="centerX" secondItem="ZjJ-7p-54F" secondAttribute="centerX" id="PIc-Gv-ObR"/>
+                            <constraint firstItem="1vG-S9-LZx" firstAttribute="top" secondItem="0I0-qm-vhg" secondAttribute="bottom" constant="24" id="RLn-FZ-isS"/>
+                            <constraint firstItem="ZjJ-7p-54F" firstAttribute="trailing" secondItem="M62-ch-17t" secondAttribute="trailing" id="oCL-yM-dbe"/>
+                            <constraint firstItem="1vG-S9-LZx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zz7-22-4nI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZjJ-7p-54F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PqL-Sh-6LE"/>
+                    <connections>
+                        <segue destination="9pT-Tn-v4S" kind="show" identifier="toNotificationPermissionRequestViewController" id="rFF-7Z-isv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="149"/>
+        </scene>
+        <!--notification_permission_request-->
+        <scene sceneID="bnq-07-kcq">
+            <objects>
+                <viewController storyboardIdentifier="NotificationRequestViewController" title="notification_permission_request" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pT-Tn-v4S" customClass="NotificationPermissionRequestViewController" customModule="Droplet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuS-Z1-t6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on notifications to get alerts when your receive new matches and messages." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-cL-net">
+                                <rect key="frame" x="32" y="118" width="311" height="431"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-Sx-tuS">
+                                <rect key="frame" x="154" y="36" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KaU-Sx-tuS" secondAttribute="height" id="msj-9D-NKq"/>
+                                    <constraint firstAttribute="height" constant="66" id="wAr-iv-ZzQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPg-cT-y7d">
+                                <rect key="frame" x="0.0" y="535" width="375" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="1e3-bb-tB4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Allow Notifications"/>
+                                <connections>
+                                    <action selector="didTapAllow:" destination="9pT-Tn-v4S" eventType="touchUpInside" id="mYC-jz-HLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RF-nn-cQN">
+                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="59J-ZE-1N0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Not Right Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancel:" destination="9pT-Tn-v4S" eventType="touchUpInside" id="YJ0-o3-2SS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HPg-cT-y7d" firstAttribute="leading" secondItem="3fh-Xn-fOX" secondAttribute="leading" id="Ckk-40-Dwu"/>
+                            <constraint firstItem="KaU-Sx-tuS" firstAttribute="top" secondItem="3fh-Xn-fOX" secondAttribute="top" constant="16" id="FgD-PE-keb"/>
+                            <constraint firstItem="3fh-Xn-fOX" firstAttribute="trailing" secondItem="HPg-cT-y7d" secondAttribute="trailing" id="OvN-5H-B2l"/>
+                            <constraint firstItem="2RF-nn-cQN" firstAttribute="top" secondItem="HPg-cT-y7d" secondAttribute="bottom" id="Qwc-Sy-Vu1"/>
+                            <constraint firstItem="KaU-Sx-tuS" firstAttribute="centerX" secondItem="3fh-Xn-fOX" secondAttribute="centerX" id="W4M-3e-JZ0"/>
+                            <constraint firstItem="3fh-Xn-fOX" firstAttribute="trailing" secondItem="2RF-nn-cQN" secondAttribute="trailing" id="ZiA-47-x6G"/>
+                            <constraint firstItem="OGg-cL-net" firstAttribute="top" secondItem="KaU-Sx-tuS" secondAttribute="bottom" constant="16" id="al9-Cd-fqg"/>
+                            <constraint firstItem="OGg-cL-net" firstAttribute="centerY" secondItem="iuS-Z1-t6p" secondAttribute="centerY" id="b2y-EU-JID"/>
+                            <constraint firstItem="2RF-nn-cQN" firstAttribute="leading" secondItem="3fh-Xn-fOX" secondAttribute="leading" id="gHS-G0-vLw"/>
+                            <constraint firstItem="3fh-Xn-fOX" firstAttribute="bottom" secondItem="2RF-nn-cQN" secondAttribute="bottom" id="w87-9P-Bqm"/>
+                            <constraint firstItem="OGg-cL-net" firstAttribute="leading" secondItem="iuS-Z1-t6p" secondAttribute="leadingMargin" constant="16" id="wPW-dM-8FV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OGg-cL-net" secondAttribute="trailing" constant="16" id="ytd-en-ZZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3fh-Xn-fOX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic0-Gx-SAt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xmD-sA-Dlr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4F6-Hb-0Sk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ms2-XT-k9e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jwo-Fw-tLS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lln-0t-p7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MessageLocationIcon" width="120" height="120"/>
+    </resources>
+</document>

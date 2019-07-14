@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Cn-7f-0lT" customClass="MessageCellAttachmentIncoming" customModule="Mirchi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b0-ck-rpy">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="177"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-BQ-U60" customClass="MessageBubble" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="60" y="18" width="130.5" height="130.5"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="i1c-sG-nCI">
+                                        <rect key="frame" x="47" y="47" width="37" height="37"/>
+                                        <color key="tintColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="color" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-Ia-6nv">
+                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="130.5"/>
+                                        <color key="tintColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OAj-Ia-6nv" secondAttribute="height" id="2Hu-fb-ZF4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OAj-Ia-6nv" firstAttribute="leading" secondItem="7Y2-BQ-U60" secondAttribute="leading" id="C2e-aH-PvR"/>
+                                    <constraint firstAttribute="bottom" secondItem="OAj-Ia-6nv" secondAttribute="bottom" id="EHP-CZ-6wp"/>
+                                    <constraint firstItem="i1c-sG-nCI" firstAttribute="centerX" secondItem="7Y2-BQ-U60" secondAttribute="centerX" id="ogx-Ag-rLI"/>
+                                    <constraint firstItem="OAj-Ia-6nv" firstAttribute="top" secondItem="7Y2-BQ-U60" secondAttribute="top" id="tRg-ER-ykz"/>
+                                    <constraint firstItem="i1c-sG-nCI" firstAttribute="centerY" secondItem="7Y2-BQ-U60" secondAttribute="centerY" id="uTr-Km-NEx"/>
+                                    <constraint firstAttribute="trailing" secondItem="OAj-Ia-6nv" secondAttribute="trailing" id="yk1-4S-IXO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI0-7F-Rez" customClass="ProfileImageButton" customModule="Mirchi" customModuleProvider="target">
+                                <rect key="frame" x="8" y="18" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hI0-7F-Rez" secondAttribute="height" id="UNd-kl-B25"/>
+                                    <constraint firstAttribute="width" constant="44" id="bLg-mk-qxt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPercentage">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapProfile:" destination="4Cn-7f-0lT" eventType="touchUpInside" id="pEP-wz-zfx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="1000" text="{{Message Date}}" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul6-li-jwy">
+                                <rect key="frame" x="65" y="4" width="84.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="OFd-cb-1DT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ul6-li-jwy" firstAttribute="top" secondItem="3b0-ck-rpy" secondAttribute="top" constant="4" id="B9a-mh-RGS"/>
+                            <constraint firstItem="OAj-Ia-6nv" firstAttribute="width" secondItem="3b0-ck-rpy" secondAttribute="width" multiplier="0.35" id="DaZ-cA-nm8"/>
+                            <constraint firstAttribute="bottom" secondItem="7Y2-BQ-U60" secondAttribute="bottom" priority="700" constant="4" id="Gop-6i-f8c"/>
+                            <constraint firstItem="7Y2-BQ-U60" firstAttribute="leading" secondItem="hI0-7F-Rez" secondAttribute="trailing" constant="8" id="K4H-DM-FH7"/>
+                            <constraint firstAttribute="width" priority="750" constant="375" id="SzO-8q-stP"/>
+                            <constraint firstItem="7Y2-BQ-U60" firstAttribute="top" secondItem="hI0-7F-Rez" secondAttribute="top" id="Ud1-kM-tOC"/>
+                            <constraint firstItem="7Y2-BQ-U60" firstAttribute="leading" secondItem="ul6-li-jwy" secondAttribute="leading" constant="-5" id="e1j-XO-kJs"/>
+                            <constraint firstAttribute="trailing" secondItem="7Y2-BQ-U60" secondAttribute="trailing" priority="700" constant="44" id="mZM-VP-lpb"/>
+                            <constraint firstItem="hI0-7F-Rez" firstAttribute="leading" secondItem="3b0-ck-rpy" secondAttribute="leading" constant="8" id="osk-As-COe"/>
+                            <constraint firstItem="7Y2-BQ-U60" firstAttribute="top" secondItem="ul6-li-jwy" secondAttribute="bottom" constant="2" id="rOo-if-wCh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3b0-ck-rpy" firstAttribute="top" secondItem="4Cn-7f-0lT" secondAttribute="top" id="9RB-Fk-8n5"/>
+                <constraint firstAttribute="trailing" secondItem="3b0-ck-rpy" secondAttribute="trailing" id="Uxi-HY-8Fb"/>
+                <constraint firstItem="3b0-ck-rpy" firstAttribute="leading" secondItem="4Cn-7f-0lT" secondAttribute="leading" id="W2b-NR-wYc"/>
+                <constraint firstAttribute="bottom" secondItem="3b0-ck-rpy" secondAttribute="bottom" id="vYm-ht-7GW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bE9-HW-oxy"/>
+            <size key="customSize" width="373" height="177"/>
+            <connections>
+                <outlet property="activityIndicator" destination="i1c-sG-nCI" id="6rl-82-OLU"/>
+                <outlet property="attachmentImageView" destination="OAj-Ia-6nv" id="ZHV-xf-AZr"/>
+                <outlet property="attachmentImageViewProportionConstraint" destination="DaZ-cA-nm8" id="1xu-Pv-Asx"/>
+                <outlet property="cellWidthConstraint" destination="SzO-8q-stP" id="8QK-af-gRM"/>
+                <outlet property="contentBottomConstraint" destination="EHP-CZ-6wp" id="T5p-tp-5t0"/>
+                <outlet property="contentLeadingConstraint" destination="C2e-aH-PvR" id="G0Z-PD-wJ5"/>
+                <outlet property="contentTopConstraint" destination="tRg-ER-ykz" id="V5b-Pc-igP"/>
+                <outlet property="contentTrailingConstraint" destination="yk1-4S-IXO" id="kwM-TN-07f"/>
+                <outlet property="messageBubble" destination="7Y2-BQ-U60" id="zkS-BU-GEH"/>
+                <outlet property="messageBubbleBottomConstraint" destination="Gop-6i-f8c" id="HeO-OJ-iIY"/>
+                <outlet property="messageBubbleLeadingConstraint" destination="K4H-DM-FH7" id="qLL-GY-yIL"/>
+                <outlet property="messageBubbleTopConstraint" destination="rOo-if-wCh" id="voT-2d-l0o"/>
+                <outlet property="messageBubbleTrailingConstraint" destination="mZM-VP-lpb" id="JSk-gY-Rng"/>
+                <outlet property="profileImageButton" destination="hI0-7F-Rez" id="EhB-Z5-QSO"/>
+                <outlet property="profileImageLeadingConstraint" destination="osk-As-COe" id="FDh-IH-ldC"/>
+                <outlet property="profileImageWidthConstraint" destination="bLg-mk-qxt" id="uEt-CN-4SW"/>
+                <outlet property="timestampHeightConstraint" destination="OFd-cb-1DT" id="ZlN-6r-gQh"/>
+                <outlet property="timestampLabel" destination="ul6-li-jwy" id="wro-iO-tcE"/>
+                <outlet property="timestampTopConstraint" destination="B9a-mh-RGS" id="b8S-J5-xu9"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="49.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

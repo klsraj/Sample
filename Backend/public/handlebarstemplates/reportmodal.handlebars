@@ -1,0 +1,84 @@
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{name}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+
+        <!--<form>
+          <div class="form-group">
+            <label for="inputKey">User ID</label>
+            <div>
+              <button type="button" class="btn btn-primary btn-sm user-btn" data-id="{{id}}">{{id}}</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="editInputName">Last Reported</label>
+            <input type="text" class="form-control" id="editInputName" value="{{formatDateTime last_reported}}" placeholder="Name" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputAge">Total Reports</label>
+            <input type="text" class="form-control" id="editInputAge" value="{{report_count}}" placeholder="Age" disabled>
+          </div>
+        </form>-->
+
+        <div class="container report-info-container">
+          <div class="row text-center">
+            <div class='report-image'>
+              <a href="#!" data-id='{{id}}' data-jsonstring='{{json user}}' {{#if user.id}}data-role='view-user'{{/if}}>
+                <img class='circular-thumbnail thumb-lg user-btn' data-id='{{id}}' data-ref='{{user.images.[0]}}' data-role='image-to-load'>
+              </a>
+            </div>
+            <div class='report-info'>
+              <div class="report-count">
+                <!--{{report_count}} report{{#ifEq report_count 1}}{{else}}s{{/ifEq}}-->
+                <div>{{#if user.id}}{{user.name}}{{else}}Deleted User{{/if}}</div>
+                <div>Reported {{report_count}} Time{{#ifEq report_count 1}}{{else}}s{{/ifEq}}</div>
+              </div>
+
+              <div class="report-date">
+                Last Reported {{formatDateTime last_reported "short"}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive mb-4">
+          <table class="table-custom-bordered middle-aligned-table table table-hover" id="child-reports-table" data-role='child-reports-table'>
+            <thead>
+              <tr>
+                <th>Reported By</th>
+                <th>Reason</th>
+                <th>Notes</th>
+                <th>Chat</th>
+                <th>Reported At</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link page-prev" href="#!" data-role='page-prev'>Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link page-next" href="#!" data-role='page-next'>Next</a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+</div>

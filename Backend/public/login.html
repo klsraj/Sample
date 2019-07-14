@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Please Sign In</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="login.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <main role="main" class="inner cover">
+            <form class="form-signin">
+              <h2 class="form-signin-heading">
+                <img src="img/bootstrap-solid.svg" width="75" height="75" class="login-logo" alt="">
+              </h2>
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me" id="inputRemember"> Remember me
+                </label>
+              </div>
+              <div class="btn btn-lg btn-primary btn-block email-login-btn">Sign in</div>
+              <!--<div class="btn btn-lg btn-secondary btn-block facebook-login-btn">Sign in with Facebook</div>-->
+            </form>
+          </main> 
+
+          <div class='loading-cover w-100 h-100'>
+            <div class="d-flex h-100 align-items-center">
+              <img class='loading-img' src='img/ajax-loader.gif'/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/handlebars-helpers.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script src="js/firebase-config.js"></script>
+
+    <script>
+      try{
+          firebase.initializeApp(config);
+      } catch (err) {
+          // we skip the "already exists" message which is
+          // not an actual error when we're hot-reloading
+          if (!/already exists/.test(err.message)) {
+              console.error('Firebase initialization error', err.stack)
+          }
+      }
+
+      function signout(){
+          firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+            console.log("Sign out successful!");
+          }).catch(function(error) {
+            console.log("Error logging out:")
+            console.log(error);
+          });
+      }
+
+      function b64DecodeUnicode(str) {
+          // Going backwards: from bytestream, to percent-encoding, to original string.
+          return decodeURIComponent(atob(str).split('').map(function(c) {
+              return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+          }).join(''));
+      }
+
+      function isObject(val) {
+          if (val === null) { return false;}
+          return ( (typeof val === 'function') || (typeof val === 'object') );
+      }
+
+      firebase.auth().onAuthStateChanged(function(user){
+        if (user) {
+            // Confirm the user is an Admin.
+            firebase.auth().currentUser.getIdToken().then(idToken => {
+                const payload = JSON.parse(b64DecodeUnicode(idToken.split('.')[1]));
+                if(!!payload['admin']){
+                    console.log("Is Admin, continue!");
+                    console.log("logged In!");
+                    window.location = "index.html";
+                }else{
+                    console.log("Not an admin, logging out!");
+                    //_self.logout();
+                }
+                
+            });
+        }else{
+          console.log("Not logged in!");
+            $(".loading-cover").hide();
+        }
+    });
+
+      $(document).ready(function(){
+        $(".email-login-btn").on("click", function(){
+          loginWithEmail();
+        });
+      });
+
+      function loginWithEmail(){
+        console.log("Logging in with email!");
+        var email = $("#inputEmail").val();
+        var password = $("#inputPassword").val();
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          alert("Error: "+errorMessage);
+        });
+      };
+
+    </script>
+  </body>
+</html>

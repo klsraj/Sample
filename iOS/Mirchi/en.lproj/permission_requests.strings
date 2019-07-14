@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "LOCATION_PERMISSION_MESSAGE"; ObjectID = "1vG-S9-LZx"; */
+"1vG-S9-LZx.text" = "We need access to your location in order to show you potential matches.";
+
+/* Class = "UIButton"; normalTitle = "Not Right Now"; ObjectID = "2RF-nn-cQN"; */
+"2RF-nn-cQN.normalTitle" = "Not Right Now";
+
+/* Class = "UIViewController"; title = "notification_permission_request"; ObjectID = "9pT-Tn-v4S"; */
+"9pT-Tn-v4S.title" = "notification_permission_request";
+
+/* Class = "UIViewController"; title = "location_permission_request"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "location_permission_request";
+
+/* Class = "UIButton"; normalTitle = "Allow Notifications"; ObjectID = "HPg-cT-y7d"; */
+"HPg-cT-y7d.normalTitle" = "Allow Notifications";
+
+/* Class = "UIButton"; normalTitle = "LOCATION_PERMISSION_ALLOW_BUTTON"; ObjectID = "M62-ch-17t"; */
+"M62-ch-17t.normalTitle" = "Allow Location Access";
+
+/* Class = "UILabel"; text = "Turn on notifications to get alerts when your receive new matches and messages."; ObjectID = "OGg-cL-net"; */
+"OGg-cL-net.text" = "Turn on notifications to get alerts when your receive new matches and messages.";

@@ -1,0 +1,117 @@
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-jsonstring="{{json this}}">
+  <div class="modal-dialog" id="modal-dialog" role="document">
+    <div class="modal-content">
+        
+        <!--<form>
+          <div class="form-group">
+            <label for="inputKey">User ID</label>
+            <input type="email" class="form-control" id="inputKey" value="{{id}}" disabled>
+          </div>
+
+          <div class="form-group">
+            <button type="button" class="btn btn-success view-location" data-id="{{id}}">View Location</button>
+            <button type="button" class="btn btn-info mr-auto view-user-chats" data-id="{{id}}">View Chats</button>
+          </div>
+
+          <div class="form-group">
+            <label for="editInputName">Name</label>
+            <input type="text" class="form-control" id="editInputName" value="{{name}}" placeholder="Name" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputAge">Date of Birth</label>
+            <input type="text" class="form-control" id="editInputAge" value="{{formatDate birthdate}}" placeholder="Age" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputGender">Gender</label>
+            <input type="text" class="form-control" id="editInputGender" value="{{formatGender gender}}" placeholder="Gender" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputWork">Work</label>
+            <input type="text" class="form-control" id="editInputWork" value="{{work}}" placeholder="Work" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputSchool">School</label>
+            <input type="text" class="form-control" id="editInputSchool" value="{{school}}" placeholder="School" disabled>
+          </div>
+          <div class="form-group">
+            <label for="editInputAbout">About</label>
+            <textarea class="form-control" id="editInputAbout" rows="3" disabled>{{about}}</textarea>
+          </div>
+        </form>
+        -->
+
+        <div class="user-images-slider-container">
+          {{#if images}}
+            <div class="user-images-slider" data-images="{{json images}}">
+              {{#each images}}
+                <div class="slider-item">
+                  <button type="button" class="btn btn-danger delete-img-btn" data-index="{{@index}}" data-id='{{../id}}' data-role="delete-image">
+                    <!--<i class="fa fa-trash" aria-hidden="true"></i>-->
+                    Delete Image
+                  </button>
+                  <!--<img class="d-block w-100 image-to-load" style="height:auto;" data-ref="{{this}}">-->
+                  <img class='image-to-load d-block w-100' style="height:auto;" data-ref='{{this}}' data-id='{{../id}}' data-role='image-to-load'>
+                </div>
+              {{/each}}
+            </div>
+          {{/if}}
+        </div>
+
+      <div class="modal-body user-modal-body">
+        <div class="btn-group action-button actions">
+          <!--<button class="btn btn-link copy-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Copy User ID" data-copy="{{id}}">
+            <i class="fa fa-clone fa-lg" aria-hidden="true"></i>
+          </button>-->
+          <div class="dropdown">
+            <button class="btn btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-id="{{id}}" href="#!" data-role="show-chats">View Chats</a>
+              <a class="dropdown-item" data-id="{{id}}" href="#!" data-role="show-reports">View Reports</a>
+              <a class="dropdown-item" data-id="{{id}}" href="#!" data-role="{{#if banned}}enable{{else}}disable{{/if}}-user"></a>
+              <a class="dropdown-item delete-user" data-id="{{id}}" href="#!" data-role='delete-user'>Delete User</a>
+            </div>
+          </div>
+        </div>
+        <p class="profile-name">{{name}} <span title='DOB: {{formatDate filters.birthdate}}'>{{ageFromDate filters.birthdate}}</span></p>
+        {{#if work}}<p class="profile-work-label"><i class="fa fa-briefcase" aria-hidden="true"></i> {{work}}</p>{{/if}}
+        {{#if school}}<p class="profile-school-label"><i class="fa fa-book" aria-hidden="true"></i> {{school}}</p>{{/if}}
+
+        <p class="profile-bio">{{about}}</p>
+
+        <div class="container text-center profile-info-container">
+          <div class="row font-weight-bold">
+            <div class="col">
+              Gender
+            </div>
+            <div class="col side-borders">
+              Interested In
+            </div>
+            <div class="col">
+              Location
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              {{formatGender filters.gender}}
+            </div>
+            <div class="col side-borders">
+              {{formatInterestedIn filters.interestedIn}}
+            </div>
+            <div class="col">
+              <a href="https://www.google.com/maps/search/?api=1&query={{lat}},{{lon}}" target="_BLANK">View <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-danger delete-user" data-id="{{id}}">Delete User</button>
+        <button type="button" class="btn btn-warning mr-auto {{#if banned}}unban-user{{else}}ban-user{{/if}}" data-id="{{id}}">{{#if banned}}Unban{{else}}Ban{{/if}} User</button>-->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

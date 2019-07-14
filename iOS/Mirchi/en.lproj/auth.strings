@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "GENDER_ENTRY_HEADING"; ObjectID = "0MW-UP-e4K"; */
+"0MW-UP-e4K.text" = "I am";
+
+/* Class = "UILabel"; text = "CODE_ENTRY_HEADING"; ObjectID = "1Jr-WA-Z2e"; */
+"1Jr-WA-Z2e.text" = "Enter SMS verification code";
+
+/* Class = "UIButton"; normalTitle = "PHONE_ENTRY_CONTINUE_BUTTON"; ObjectID = "3fr-xj-XSq"; */
+"3fr-xj-XSq.normalTitle" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "CODE_ENTRY_RESEND_BUTTON"; ObjectID = "63C-he-g1s"; */
+"63C-he-g1s.normalTitle" = "Resend";
+
+/* Class = "UILabel"; text = "INTERESTED_IN_HEADING"; ObjectID = "82J-Lt-PJV"; */
+"82J-Lt-PJV.text" = "Show me";
+
+/* Class = "UIButton"; normalTitle = "CODE_ENTRY_CONTINUE_BUTTON"; ObjectID = "AY8-dd-UUk"; */
+"AY8-dd-UUk.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "PHOTO_ENTRY_HEADING"; ObjectID = "Dbc-tD-rmb"; */
+"Dbc-tD-rmb.text" = "Upload your best pic";
+
+/* Class = "UIButton"; normalTitle = "LOGIN_LOGIN_USING_PHONE_BUTTON"; ObjectID = "DlL-3o-RaZ"; */
+"DlL-3o-RaZ.normalTitle" = "Login with Phone Number";
+
+/* Class = "UIButton"; normalTitle = "LOGIN_LOGIN_USING_FACEBOOK_BUTTON"; ObjectID = "GxC-gE-NLa"; */
+"GxC-gE-NLa.normalTitle" = "Login with Facebook";
+
+/* Class = "UILabel"; text = "CODE_ENTRY_DISCLAIMER"; ObjectID = "HYo-FB-bp1"; */
+"HYo-FB-bp1.text" = "You should shortly receive a verification code by SMS.  If you didn't receive one tap Resend.";
+
+/* Class = "UILabel"; text = "FIRST_NAME_ENTRY_DISCLAIMER"; ObjectID = "Nr4-yK-DgP"; */
+"Nr4-yK-DgP.text" = "Your name will be visible to other users";
+
+/* Class = "UILabel"; text = "LOGIN_FACEBOOK_DISCLAIMER"; ObjectID = "OpQ-Rj-iUm"; */
+"OpQ-Rj-iUm.text" = "By continuing you agree to our Terms of Service and Privacy Policy";
+
+/* Class = "UILabel"; text = "PHONE_ENTRY_DISCLAIMER"; ObjectID = "PYN-FE-cs6"; */
+"PYN-FE-cs6.text" = "Tap Continue to receive an SMS verification code.  Message and data rates may apply.";
+
+/* Class = "UILabel"; text = "LOGIN_APP_NAME"; ObjectID = "Prh-ff-Xbw"; */
+"Prh-ff-Xbw.text" = "Mirchi";
+
+/* Class = "UIButton"; normalTitle = "FIRST_NAME_ENTRY_CONTINUE_BUTTON"; ObjectID = "TBA-Bs-fFn"; */
+"TBA-Bs-fFn.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "FIRST_NAME_ENTRY_HEADING"; ObjectID = "UuX-ep-Pyc"; */
+"UuX-ep-Pyc.text" = "Tell us your first name";
+
+/* Class = "UIButton"; normalTitle = "INTERESTED_IN_MEN_BUTTON"; ObjectID = "Uyd-v2-wMo"; */
+"Uyd-v2-wMo.normalTitle" = "Men";
+
+/* Class = "UILabel"; text = "PHONE_ENTRY_HEADING"; ObjectID = "Wds-KY-UZu"; */
+"Wds-KY-UZu.text" = "Enter your mobile phone number";
+
+/* Class = "UIButton"; normalTitle = "GENDER_ENTRY_CONTINUE_BUTTON"; ObjectID = "dws-JF-Mzv"; */
+"dws-JF-Mzv.normalTitle" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "INTERESTED_IN_WOMEN_BUTTON"; ObjectID = "gmJ-Rt-4q1"; */
+"gmJ-Rt-4q1.normalTitle" = "Women";
+
+/* Class = "UIButton"; normalTitle = "INTERESTED_IN_CONTINUE_BUTTON"; ObjectID = "iIs-EH-lHe"; */
+"iIs-EH-lHe.normalTitle" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "GENDER_ENTRY_MALE_BUTTON"; ObjectID = "kOT-pV-tVl"; */
+"kOT-pV-tVl.normalTitle" = "Male";
+
+/* Class = "UILabel"; text = "DOB_ENTRY_HEADING"; ObjectID = "oIt-JY-nUA"; */
+"oIt-JY-nUA.text" = "Tell us your date of birth";
+
+/* Class = "UIButton"; normalTitle = "DOB_ENTRY_CONTINUE_BUTTON"; ObjectID = "pfB-Bw-nIe"; */
+"pfB-Bw-nIe.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "DOB_ENTRY_DISCLAIMER"; ObjectID = "tTn-RC-Dgk"; */
+"tTn-RC-Dgk.text" = "Your age will be visible to other users";
+
+/* Class = "UIButton"; normalTitle = "INTERESTED_IN_MEN_AND_WOMEN_BUTTON"; ObjectID = "uvD-8O-4kc"; */
+"uvD-8O-4kc.normalTitle" = "Men and Women";
+
+/* Class = "UIButton"; normalTitle = "GENDER_ENTRY_FEMALE_BUTTON"; ObjectID = "vhL-Vb-a9E"; */
+"vhL-Vb-a9E.normalTitle" = "Female";
+
+/* Class = "UIBarButtonItem"; title = "PRIVACY_DECLINE_BUTTON"; ObjectID = "Jza-Qa-Fds"; */
+"Jza-Qa-Fds.title" = "Decline";
+
+/* Class = "UIBarButtonItem"; title = "PRIVACY_ACCEPT_BUTTON"; ObjectID = "3JA-sZ-B4q"; */
+"3JA-sZ-B4q.title" = "Accept";

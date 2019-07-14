@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; normalTitle = "PROFILE_EDIT_PROFILE_BUTTON"; ObjectID = "HkJ-NY-I8D"; */
+"HkJ-NY-I8D.normalTitle" = "Edit Profile";
+
+/* Class = "UILabel"; text = "GENDER_SELECT_WOMAN_OPTION"; ObjectID = "I5A-ch-Wdu"; */
+"I5A-ch-Wdu.text" = "Female";
+
+/* Class = "UILabel"; text = "GENDER_SELECT_MAN_OPTION"; ObjectID = "SZY-35-p1z"; */
+"SZY-35-p1z.text" = "Male";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_NO_PREFERENCE_OPTION"; ObjectID = "hkZ-1I-MnX"; */
+"dVh-aD-EaU.text" = "No Preference";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_BRAHMIN_OPTION"; ObjectID = "jdx-sd-Y79"; */
+"ERV-xa-ahg.text" = "Brahmin";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_KAMMA_OPTION"; ObjectID = "SZY-35-p1z"; */
+"Nbj-wi-FK1.text" = "Kamma";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_KAPU_OPTION"; ObjectID = "SZY-35-p1z"; */
+"tnI-YB-MFZ.text" = "Kapu";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_PATEL_OPTION"; ObjectID = "SZY-35-p1z"; */
+"cb6-DN-P9D.text" = "Patel";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_RAJU_OPTION"; ObjectID = "SZY-35-p1z"; */
+"IeG-Ib-mvf.text" = "Raju";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_REDDY_OPTION"; ObjectID = "SZY-35-p1z"; */
+"qmD-M7-qV4.text" = "Reddy";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_VELAMA_OPTION"; ObjectID = "SZY-35-p1z"; */
+"FH4-Ia-tOk.text" = "Velama";
+
+/* Class = "UILabel"; text = "COMMUNITY_SELECT_VYSYA_OPTION"; ObjectID = "SZY-35-p1z"; */
+"DU8-Sh-Vad.text" = "Vysya";
+
+/* Class = "UILabel"; text = "PROFILE_MUTUAL_FRIENDS_HEADING"; ObjectID = "fck-Gc-ALr"; */
+"fck-Gc-ALr.text" = "Mutual Friends";
+
+/* Class = "UITableViewSection"; headerTitle = "EDIT_PROFILE_SCHOOL_SECTION_HEADING"; ObjectID = "gbJ-uU-LPP"; */
+"gbJ-uU-LPP.headerTitle" = "Current College/University";
+
+/* Class = "UITableViewSection"; headerTitle = "EDIT_PROFILE_COMMUNITY_SECTION_HEADING"; ObjectID = "gbJ-uU-LPP"; */
+"1lj-7W-t7t.headerTitle" = "Community/Sect";
+
+/* Class = "UITableViewSection"; headerTitle = "EDIT_PROFILE_ABOUT_ME_SECTION_HEADING"; ObjectID = "lv4-nq-4tz"; */
+"lv4-nq-4tz.headerTitle" = "About Me";
+
+/* Class = "UITableViewSection"; headerTitle = "EDIT_PROFILE_WORK_SECTION_HEADING"; ObjectID = "oLY-4s-W4I"; */
+"oLY-4s-W4I.headerTitle" = "Current Job Title/Organization";
+
+/* Class = "UITextField"; placeholder = "EDIT_PROFILE_WORK_PLACEHOLDER"; ObjectID = "pXg-iq-7QJ"; */
+"pXg-iq-7QJ.placeholder" = "Add Your Work";
+
+/* Class = "UITableViewSection"; headerTitle = "EDIT_PROFILE_GENDER_SECTION_HEADING"; ObjectID = "ut3-UV-AAV"; */
+"ut3-UV-AAV.headerTitle" = "I am";
+
+/* Class = "UITextField"; placeholder = "EDIT_PROFILE_SCHOOL_PLACEHOLDER"; ObjectID = "zcG-hh-9NC"; */
+"zcG-hh-9NC.placeholder" = "Add Your College";
+
+/* Class = "UITextField"; placeholder = "EDIT_PROFILE_COMMUNITY_PLACEHOLDER"; ObjectID = "zcG-hh-9NC"; */
+"JpD-P2-Up5.placeholder" = "Add Your Community";

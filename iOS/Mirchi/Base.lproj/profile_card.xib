@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileCardView" customModule="Mirchi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V4l-Dm-sj0" customClass="ShapeImageView" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{User School}}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mqh-5u-gdI" customClass="ShadowLabel" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="16" y="623.5" width="335" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                    <attributedString key="userComments">
+                        <fragment content="#bc-ignore!">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="customShadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="customShadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{User Work}}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="MDp-du-zwA" customClass="ShadowLabel" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="16" y="602" width="335" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                    <attributedString key="userComments">
+                        <fragment content="#bc-ignore!">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="customShadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="customShadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{User Name}}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="IgH-AW-c42" customClass="ShadowLabel" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="16" y="573.5" width="148.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                    <attributedString key="userComments">
+                        <fragment content="#bc-ignore!">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="customShadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="customShadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{User Age}}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jlq-s1-KBv" customClass="ShadowLabel" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="164.5" y="573.5" width="129.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                    <attributedString key="userComments">
+                        <fragment content="#bc-ignore!">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="customShadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="customShadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="CardSuperlikeOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="xMm-a0-x1y">
+                    <rect key="frame" x="298" y="573.5" width="26.5" height="26.5"/>
+                    <color key="tintColor" red="0.19215686269999999" green="0.74509803919999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xMm-a0-x1y" secondAttribute="height" id="zEc-zi-wep"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpn-5Z-ChS">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="507.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="hP6-p2-Osh" appends="YES" id="NOm-1W-kUB"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-iY-ng6">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="507.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="jJn-Lw-Cbv" appends="YES" id="PqD-zl-R7d"/>
+                    </connections>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDa-YU-9kG" userLabel="GuideView" customClass="RoundedView" customModule="Mirchi" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="EPy-oP-C9Z">
+                            <rect key="frame" x="248.5" y="221" width="66" height="66"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="66" id="gD8-fd-DUK"/>
+                                <constraint firstAttribute="width" constant="66" id="zOh-83-LGj"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AdG-P0-5Hs">
+                            <rect key="frame" x="154.5" y="507.5" width="66" height="159.5"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="66" id="3cY-QH-2NC"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-XK-CBq">
+                            <rect key="frame" x="61" y="221" width="66" height="66"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="66" id="MBC-gt-KnY"/>
+                                <constraint firstAttribute="width" constant="66" id="Ns0-Aa-vpY"/>
+                            </constraints>
+                        </imageView>
+                        <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-Pn-KWm">
+                            <rect key="frame" x="185.5" y="0.0" width="4" height="503.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="4" id="C6v-AA-wFF"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQl-Zg-atd">
+                            <rect key="frame" x="0.0" y="503.5" width="375" height="4"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="tHU-Or-Gc0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33000000000000002" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iQl-Zg-atd" secondAttribute="trailing" id="6Pq-R3-vRe"/>
+                        <constraint firstItem="AdG-P0-5Hs" firstAttribute="centerX" secondItem="CDa-YU-9kG" secondAttribute="centerX" id="7cW-J5-c3m"/>
+                        <constraint firstItem="AdG-P0-5Hs" firstAttribute="top" secondItem="iQl-Zg-atd" secondAttribute="bottom" id="Men-tN-Hz3"/>
+                        <constraint firstItem="3vR-Pn-KWm" firstAttribute="top" secondItem="CDa-YU-9kG" secondAttribute="top" id="OoE-U7-R44"/>
+                        <constraint firstAttribute="bottom" secondItem="AdG-P0-5Hs" secondAttribute="bottom" id="WrX-eH-fgl"/>
+                        <constraint firstItem="iQl-Zg-atd" firstAttribute="leading" secondItem="CDa-YU-9kG" secondAttribute="leading" id="dH0-ef-Z1g"/>
+                        <constraint firstItem="3vR-Pn-KWm" firstAttribute="centerX" secondItem="CDa-YU-9kG" secondAttribute="centerX" id="ikP-vC-vAV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="vcQ-vv-Lfj" appends="YES" id="pWW-AP-1T6"/>
+                    </connections>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Jlq-s1-KBv" firstAttribute="bottom" secondItem="IgH-AW-c42" secondAttribute="bottom" id="0Be-Qb-oUx"/>
+                <constraint firstAttribute="bottom" secondItem="V4l-Dm-sj0" secondAttribute="bottom" id="0lZ-Up-9no"/>
+                <constraint firstItem="Egg-iY-ng6" firstAttribute="leading" secondItem="fpn-5Z-ChS" secondAttribute="trailing" id="224-6J-XQn"/>
+                <constraint firstItem="IgH-AW-c42" firstAttribute="top" secondItem="Egg-iY-ng6" secondAttribute="bottom" constant="66" id="4EQ-fr-dRc"/>
+                <constraint firstAttribute="trailing" secondItem="V4l-Dm-sj0" secondAttribute="trailing" id="5MR-dt-Y1K"/>
+                <constraint firstItem="YXL-XK-CBq" firstAttribute="centerY" secondItem="fpn-5Z-ChS" secondAttribute="centerY" id="81c-ua-Nh6"/>
+                <constraint firstItem="IgH-AW-c42" firstAttribute="top" secondItem="fpn-5Z-ChS" secondAttribute="bottom" constant="66" id="FUB-AR-PXS"/>
+                <constraint firstItem="xMm-a0-x1y" firstAttribute="bottom" secondItem="Jlq-s1-KBv" secondAttribute="bottom" id="HFK-xj-ec2"/>
+                <constraint firstItem="3vR-Pn-KWm" firstAttribute="bottom" secondItem="Egg-iY-ng6" secondAttribute="bottom" constant="-4" id="Hph-uB-ZmZ"/>
+                <constraint firstItem="Egg-iY-ng6" firstAttribute="width" secondItem="fpn-5Z-ChS" secondAttribute="width" id="Inm-tJ-x36"/>
+                <constraint firstItem="Mqh-5u-gdI" firstAttribute="top" secondItem="MDp-du-zwA" secondAttribute="bottom" constant="2" id="JVm-GO-BQT"/>
+                <constraint firstItem="fpn-5Z-ChS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MiN-Tm-Xek"/>
+                <constraint firstAttribute="bottom" secondItem="CDa-YU-9kG" secondAttribute="bottom" id="NZL-Lf-uQL"/>
+                <constraint firstItem="EPy-oP-C9Z" firstAttribute="centerY" secondItem="Egg-iY-ng6" secondAttribute="centerY" id="O1V-AO-Vxa"/>
+                <constraint firstAttribute="bottom" secondItem="Mqh-5u-gdI" secondAttribute="bottom" constant="24" id="OdR-i7-3wf"/>
+                <constraint firstAttribute="trailing" secondItem="MDp-du-zwA" secondAttribute="trailing" constant="24" id="Qyp-WJ-X9m"/>
+                <constraint firstAttribute="trailing" secondItem="CDa-YU-9kG" secondAttribute="trailing" id="TVF-1v-cLN"/>
+                <constraint firstItem="Jlq-s1-KBv" firstAttribute="top" secondItem="IgH-AW-c42" secondAttribute="top" id="Thf-B1-4HL"/>
+                <constraint firstItem="V4l-Dm-sj0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UTu-Qs-hCR"/>
+                <constraint firstItem="EPy-oP-C9Z" firstAttribute="centerX" secondItem="Egg-iY-ng6" secondAttribute="centerX" id="XlY-Ms-h7p"/>
+                <constraint firstItem="V4l-Dm-sj0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i5L-ye-EI0"/>
+                <constraint firstItem="IgH-AW-c42" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="i8p-SC-B34"/>
+                <constraint firstItem="MDp-du-zwA" firstAttribute="leading" secondItem="IgH-AW-c42" secondAttribute="leading" id="kn1-Vj-Dgs"/>
+                <constraint firstItem="Jlq-s1-KBv" firstAttribute="leading" secondItem="IgH-AW-c42" secondAttribute="trailing" id="ldZ-UA-m0I"/>
+                <constraint firstAttribute="trailing" secondItem="Mqh-5u-gdI" secondAttribute="trailing" constant="24" id="mH1-fe-sxc"/>
+                <constraint firstItem="xMm-a0-x1y" firstAttribute="top" secondItem="Jlq-s1-KBv" secondAttribute="top" id="p4O-gh-oDv"/>
+                <constraint firstItem="Mqh-5u-gdI" firstAttribute="leading" secondItem="MDp-du-zwA" secondAttribute="leading" id="pKP-01-Dcr"/>
+                <constraint firstItem="xMm-a0-x1y" firstAttribute="leading" secondItem="Jlq-s1-KBv" secondAttribute="trailing" constant="4" id="qhn-jQ-FOW"/>
+                <constraint firstItem="YXL-XK-CBq" firstAttribute="centerX" secondItem="fpn-5Z-ChS" secondAttribute="centerX" id="ts2-1p-PKB"/>
+                <constraint firstItem="iQl-Zg-atd" firstAttribute="bottom" secondItem="Egg-iY-ng6" secondAttribute="bottom" id="twB-Po-J5E"/>
+                <constraint firstItem="fpn-5Z-ChS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w8i-BW-QuF"/>
+                <constraint firstItem="MDp-du-zwA" firstAttribute="top" secondItem="IgH-AW-c42" secondAttribute="bottom" constant="2" id="wYY-Uh-Qnn"/>
+                <constraint firstAttribute="trailing" secondItem="Egg-iY-ng6" secondAttribute="trailing" id="xAf-Lm-BIh"/>
+                <constraint firstItem="Egg-iY-ng6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zTg-le-5Cc"/>
+                <constraint firstItem="CDa-YU-9kG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zaV-co-Wqd"/>
+                <constraint firstItem="CDa-YU-9kG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zpu-s2-X9m"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.20000000000000001"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                    <point key="value" x="0.0" y="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ageLabel" destination="Jlq-s1-KBv" id="Urf-hR-U0L"/>
+                <outlet property="guideView" destination="CDa-YU-9kG" id="XBT-Qq-aBr"/>
+                <outlet property="nameLabel" destination="IgH-AW-c42" id="C7c-Cv-yH1"/>
+                <outlet property="profileImageView" destination="V4l-Dm-sj0" id="LWw-Fh-wD8"/>
+                <outlet property="schoolLabel" destination="Mqh-5u-gdI" id="MNQ-Py-gkE"/>
+                <outlet property="superlikeImageView" destination="xMm-a0-x1y" id="uET-NJ-oPx"/>
+                <outlet property="workLabel" destination="MDp-du-zwA" id="62R-gl-2b8"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="62.5"/>
+        </view>
+        <tapGestureRecognizer id="hP6-p2-Osh" userLabel="ImageLeftTap">
+            <connections>
+                <action selector="showPreviousImage:" destination="iN0-l3-epB" id="LGW-15-o0Z"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="jJn-Lw-Cbv" userLabel="ImageRightTap">
+            <connections>
+                <action selector="showNextImage:" destination="iN0-l3-epB" id="Wqj-7r-aBm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="vcQ-vv-Lfj" userLabel="GuideViewTap">
+            <connections>
+                <action selector="guideViewTapped:" destination="iN0-l3-epB" id="ReI-mB-qVN"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="CardSuperlikeOverlay" width="150" height="150"/>
+        <image name="TapIcon" width="66" height="66"/>
+    </resources>
+</document>

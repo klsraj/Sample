@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="pIm-2z-A22" customClass="ShapeImageView" customModule="Sparker" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="f9h-nh-wt0"/>
+                        <constraint firstAttribute="width" constant="50" id="r28-qW-8rT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-Iz-ZpU" customClass="ShapeView" customModule="Sparker" customModuleProvider="target">
+                    <rect key="frame" x="66" y="8" width="273" height="74.5"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Lorem ipsum this is a test to see just how well this auto-layout works on this message cell!" translatesAutoresizingMaskIntoConstraints="NO" id="yUi-xE-oSx">
+                            <rect key="frame" x="12" y="4" width="249" height="66.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="yUi-xE-oSx" firstAttribute="top" secondItem="ll1-Iz-ZpU" secondAttribute="top" constant="4" id="Nf8-BF-1Vi"/>
+                        <constraint firstItem="yUi-xE-oSx" firstAttribute="leading" secondItem="ll1-Iz-ZpU" secondAttribute="leading" constant="12" id="WcV-98-IL9"/>
+                        <constraint firstAttribute="bottom" secondItem="yUi-xE-oSx" secondAttribute="bottom" constant="4" id="ZNF-85-mgb"/>
+                        <constraint firstAttribute="trailing" secondItem="yUi-xE-oSx" secondAttribute="trailing" constant="12" id="dlH-xb-cmS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="17:40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ5-Ed-VWp">
+                    <rect key="frame" x="312" y="87" width="27" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ll1-Iz-ZpU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="AWQ-hf-fqU"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ll1-Iz-ZpU" secondAttribute="trailing" priority="750" constant="36" id="NNL-FO-4Lc"/>
+                <constraint firstItem="pIm-2z-A22" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="b8n-42-XAd"/>
+                <constraint firstItem="ll1-Iz-ZpU" firstAttribute="leading" secondItem="pIm-2z-A22" secondAttribute="trailing" constant="8" id="fQW-Xs-kI6"/>
+                <constraint firstItem="aJ5-Ed-VWp" firstAttribute="trailing" secondItem="ll1-Iz-ZpU" secondAttribute="trailing" id="hhR-iN-XnS"/>
+                <constraint firstItem="pIm-2z-A22" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="qgE-Hr-qmd"/>
+                <constraint firstItem="aJ5-Ed-VWp" firstAttribute="top" secondItem="ll1-Iz-ZpU" secondAttribute="bottom" constant="4" id="wbv-XD-eAh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="44.5" y="-457.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="360" height="360"/>
+    </resources>
+</document>
